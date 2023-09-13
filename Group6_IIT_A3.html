@@ -4,14 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group6_IIT_A3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font: 12pt "Times New Roman";
+        }
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .page {
+            width: 21cm;
+            min-height: 25cm;
+            padding: 2cm;
+            margin: 0.5cm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .subpage {
+            padding: 1cm;
+            border: 5px red solid;
+            height: 237mm;
+            outline: 2cm white solid;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+     }</style>
 </head>
 <body>
 <!--Write cover page Nguyen Kim Long-->
-<img style="display:block; margin-left:auto; margin-right:auto; width:50%;" src="RMIT image.svg.png" alt="logo of RMIT">
-<br />
-<br />
-<br />
-<h1 style="font-family:'Times New Roman', Times, serif; font-size: 12pt; text-align:center">Assignment 3: Our IT Project</h1>
+<div class="book">
+    <div class="page">
+        <div>
+            <img style="display:block; margin-left: auto; margin-right: auto; width: 80%;" src="RMIT image.svg.png" alt="logo of RMIT">
+            <br />
+            <br />
+            <br />
+            <h1 style=" font-size: 18pt; text-align: center">Assignment 3: Our IT Project</h1>
+        </div></div>    
+    
+    
+    </div>
+    <div class="page">
+        <div class="subpage">Page 2/2</div>    
+    </div>
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 2/2</div>    
+    </div>
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 2/2</div>    
+    </div>
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 2/2</div>    
+    </div>
+    </div>
+</div>
+
+
+
+
 
 
 
