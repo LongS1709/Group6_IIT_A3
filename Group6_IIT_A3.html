@@ -3,84 +3,656 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> 
-        p {font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;}
-    </style>
     <title>Group6_IIT_A3</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+            border-collapse: collapse;    
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font: 12pt "Times New Roman";
+        }
+        .font_default{
+            font-weight: lighter;
+            font-size: 12pt;
+        }
+        .indent{
+            text-indent: 34px;
+        }
+            
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .page {
+            width: 21.9cm;
+            min-height: 29.7cm;
+            padding: 2cm;
+            margin: 0.5cm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-weight: lighter;
+        }
+        .subpage {
+            padding: 1cm;
+            border: 5px red solid;
+            /*height 237mm*/
+            height: 260mm;
+            outline: 2cm white solid;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            .page {
+                margin: auto;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+
+        }
+     </style>
 </head>
 <body>
-    <!-- Group reflection -->
-    <h1>Group reflection:</h1>
-    <h2>Nguyen Kim Long:</h2>
-    <p>Based on my experience working with the team, it is without a doubt a pleasant experience to be collaborating with members who are hard-working and knowledgeable in their respective skill sets. 
-        Members are always on time and stand in readiness for given responsibilities. 
-        While it is true that certain absences did occur, members are always responsive to deliver their issue and help me in finding optimal solutions for their problems so that the processes of writing the report, coding, and presentation can be resumed. 
-        However, I’m not quite pleased with the entire team novice experience with the available technologies. 
-        This is not to be a very big issue, since the majority of the members are new to this industry. 
-        Thus, those expertise are to be expected later in the future. 
-        I was surprised with members who are hard-working and enthusiastically active, they are always willing to commit more than meets the eye to witness the project’s completion. 
-        By engaging with the team, I’ve learned that it takes less time to finish a project with the support of hard-working and responsible team members. 
-        Nevertheless, I look forward to working in such a team with members like these in the future. </p>
-    <hr>
 
-    <h2>Che Minh Quan:</h2>
-    <p>For these projects with my team members, it is a pleasure to work with many talented individuals with unique skill sets and knowledge in many fields, especially in updating the latest technology trend and its use for our project. 
-        The group displays a well built plan that incorporates each of our members' individuals that display different levels of understanding regarding coding language, and IT courses overall. 
-        They are all very details oriented with realistic expectations that each group member must fulfil within a limited timeline as fast as possible. 
-        It makes me do my best and give my best for the group as much as possible with my own knowledge and skill sets too. 
-        However, I also experience setbacks due to my own inattentiveness in group discussions that cause my leader not please with my scatter participation in group work, as my greatest weakness is in learning to work with those that possess different background from me that makes me feel not capable of adapting in working with people as much as I think I could. 
-        I possess an individual streak that borders on nonconformity toward the group guidelines that get me in trouble with myself. 
-        However, I will do my best ịn correct my own fallibility as part of learning experience in these courses for the betterment of myself and the group overall. 
-        One thing that I learned for myself is that each member must perform to the best of their abilities in each individual task and must carry their weight in this project with professionalism that is expected from each of us. 
-        I am grateful to join a wonderful group with many talented individuals that drive me to be the best version of myself as much as possible to accomplish our group goals that we have drawn for ourselves. </p>
-    <hr>
-
-    <h2>Pham Dao Tan Loc:</h2>
-    <p>From my perspective, we already did well in this assignment. 
-        We worked on the technology of financial service that can have a new platform for humans to control, save and trade goods. 
-        Basically, we provided enough for requirements and already bonus examples and supporting details to help everyone and us too to understand easier. 
-        Our team showed some tools like Javascript, HTML as a way that we will focus on if we want to start the project. 
-        Actually, we did some research on the things we wrote on the internet and some were from university. 
-        We had a private group for roles division and discussion for this assignment. 
-        Some good things were that we had interactions with each other to carry out the assignment even though it may not have been as we had expected by some hurdles like thinking. 
-        That meant we had to improve teamwork and coordination ability. Besides that, I was really surprised with Long's idea. 
-        I saw him prepare for this project in a long time so that he showed every idea so smoothly. 
-        Finally, one thing I learned from my group is how to work together and how it is important to me in the future.</p>
-    <hr>
-
-    <h2>Quan Hung:</h2>
-    <p>Everything seems to work well, as our group is expected to do throughout the entire project. 
-        Nevertheless, a number of errors were committed in the process, as well as difficulties among the team. 
-        Initially, we were discussing our aspects with regard to the project idea that was proposed by the leader, Nguyen Kim Long. 
-        Due to the specialization in several areas, research is expected before moving forward. Afterwards, tasks were assigned at the first meeting. 
-        There are, however, several matters that arise post-discussion. Due to the burden of schedules, it's hard to find a reasonable time for meeting face-to-face. 
-        Therefore, we decided to work remotely and discuss through social sites. 
-        Another thing is that the project strictly requires proficiency in certain programming languages, such as Javascript, HTML, and CSS. Fortunately, everything is settled down. 
-        Throughout the process, I was amazed at all the opinions that my teammates proposed, especially the idea of using financial formulas to give an outstanding analysis for the user. 
-        Thanks to that, I am capable of learning new things regarding other disciplines, which I wish to add to my foundational knowledge in order to operate my career pathway well. 
-        Likewise, I learned a couple of soft skills that I was not good at and improved them, such as leadership, problem-solving, communicating, and collaboration.</p>
-    <hr>
+<div class="book">
+    <!--Write cover page Nguyen Kim Long-->
+    <div class="page">
+        <div>
+            <img style="display:block; margin-left: auto; margin-right: auto; width: 80%;" src="RMIT image.svg.png" alt="logo of RMIT">
+            <br />
+            <br />
+            <br />
+            <h1 class="font_default" style=" font-size: 18pt; text-align: center">Assignment 3: Our IT Project</h1>
+            <br />
+            <br />
+            <br />
+            <h1 class="font_default" style="font-size: 16pt; text-align: center; line-height: 1.5"> 
+                COSC2083 (2392) <br />
+                Semester 2 2023 <br />
+                Lecturer: Nguyen Minh Long <br />
+                RMIT University Vietnam <br />    
+            </h1>
+            <br />
+            <p style="font-weight:bold; font-size:16pt; text-align: center;">Prepared by:</p>
+            <p style="font-weight:lighter; font-size:16pt; text-align: center; line-height: 1.5"> 
+                Nguyen Kim Long - s4031709 <br/>
+                Che Minh Quan - s3893635   <br/>
+                Quan Hung - s3980813        <br/>
+                Pham Dao Tan Loc - s3924306 <br/>
+            </p>
+            <br />
+            <h1 style="font-weight:lighter; font-size:12pt; text-align:center; line-height: 1.5; font-style:italic">I declare that in submitting all work for this assessment I have read, understood and agree to the content
+                and expectations of the Assessment declaration 
+            </h1>
+            <br />
+            <h1 style="font-weight:lighter; font-size:16pt; text-align:center">Date submitted: September 18, 2023 </h1>
+            <br />
     
-    <h2>Group:</h2>
-    <p>After we finished the assignment, we checked together again and compiled a few ideas for this general reflection. 
-        First, we have provided related details with regards to the "Financial Gen" project including background information, structure, purpose, etc. 
-        we tried together to fully meet the assignment's requirements which made it quite difficult for us to search and research data to fill the requirements. 
-        Especially in the "Detailed description" section, it has quite a few requirements and the description is also quite long. 
-        Especially when each person has their own opinion and thoughts about each item. 
-        Therefore, it took us a lot of time to complete it so that we could meet the needs of the article and not ignore any comments or contributions from the members. 
-        Besides, each person has a different free time to be online, which is also a barrier that makes many details in our articles not really that good and takes more of our time than originally expected. 
-        Although we have completed this assignment, it is only on paper and we still have a live presentation in class. That is the real challenge for us. 
-        Anyway, we'll try to use the little time we have left to prepare for the day as best we can. However, there were also many things that we did well like we completed before the deadline. 
-        This is a very important factor not only in terms of grades but also our own time and pressure regarding the presentation as well as each person's own free time for their own lives. 
-        As mentioned above, consistency in assignment time and content is something we need to improve. 
-        Since this was just an average project, we at least managed to do what we needed to do despite the difficulties. 
-        But with larger-scale projects in the future, it may turn from a barrier into psychological pressure if we continue to stick together. 
-        During the implementation process, the various contributions were obviously what surprised us the most. 
-        Each person has a different perspective, which leads to a series of ideas being born. 
-        Obviously not all of them are suitable and usable, but they are still the factors that create a breakthrough for us. 
-        And in a group environment, gaining knowledge from each other is definitely the most valuable lesson we can learn. 
-        It can be a tool to help us understand each other better, it also helps us be open-minded. 
-        From there, it helps improve the thinking and soft abilities of each member.</p>
+        </div>
+    </div>    
+    
+    
+    </div>
+    <!--Write table of content K.Long-->
+    <div class="page">
+        <div class="subpage">Table of content</div>
+            
+    </div>
+    </div>
+    <!--Write team profile K.Long-->
+    <div class="page">
+        <div class="subpage">
+            <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;">Team profile</h1>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Team name</h2>
+            <p class="font_default" style="line-height:1.5">
+                &nbsp &nbsp &nbsp &nbsp The team’s name through consensus among members is “FinancialGen”. 
+                This is going to be the team’s official name throughout the assignment 3 progress. 
+                The purpose for selecting the name is due to our goal of developing software solutions for the Finance’s sector; 
+                while the name: 
+                “Gen” represents the demographics on the receiving-end like middle-age, seniors, and more. 
+                Thus, the team hopes to develop, solve, and handle any emerging challenges for both the community and the market. 
+            </p>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Personal information</h2>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Nguyen Kim Long - s4031709</h3>
+            <p class="font_default indent" style="line-height:1.5">Currently a freshman student of RMIT university in Vietnam, majoring in IT. 
+                Proficient in writing Python’s and Linux, MySQL. 
+                During free time, I’d like to read or watch content about computer’s areas like: web development, AI, and coding languages. 
+                Besides computers, I’m interested in learning mathematics. 
+                Not only that, I like reading current news developments in areas like politics, business, and science. 
+                Within the sphere of Information Technology, I’ve a preference in developing web’s solutions for individuals and businesses as a full-stack developer.
+                I’m also keen on integrating machine learning algorithms into any project’s that I’d have worked on to develop automated results. 
+                As a recent entrant to the field of Information Technology, my latest and most recent development is in solving Python’s inquiries, developing database management systems, and commanding MacOS terminals using Linux. 
+                Not only that, I have satisfactory attempts in using Github’s repositories, creating branches, assigning commits, and making “Pull” requests.
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Che Minh Quan - s3893635</h3>
+            <p class="font_default indent" style="line-height:1.5">
+                Currently RMIT’s students majoring in IT had experience in coding from high school, skill in HTML, Javascript, and Python. 
+                Hobbies: Love exploring AI sentients. Often questioned oneself with hypothetical questions of Artificial Intelligence mimicking human intellect. 
+                For IT Interests, I practise Python, Javascript, and C++ in my free time. I had coded robots in highschool, I also have experience in HTML by creating a website during high school. 
+                Learning coding makes me like AI. For IT experience, I have built an e-commerce website, a restaurant’s webpage, and participated in coding competitions. 
+            </p>
+        </div>    
+    </div>
+    </div>
+
+    <div class="page">
+    <!--Write team profile K.Long-->
+        <div class="subpage">
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Quan Hung - s3980813 </h3>
+            <p class="font_default indent" style="line-height:1.5">
+                I’m currently majoring in IT at RMIT, and have six years of study abroad in Australia. For hobbies, I love to integrate video graphics cards (VGAs) into a motherboard as well as watch videos about building gaming PCs. 
+                Additionally, I found my interest in several coding videos where coders show both logical thinking and technical skills to solve issues. Finally, I draw a lesson that no matter how much time it takes to complete, 
+                as long as you stick with your plan, you will find tremendous approaches for yourself to select which is the most efficient and will let you see it bear fruit. My IT interest is through acquainting with certain IT sections like writing Python and C#. 
+                Furthermore, I studied fundamental concepts in computing science, including database concepts and data’s queries using SQL language, principles of good GUI design, and computer components. In addition, I currently gained knowledge of Linux commands, HTML and CSS. 
+                In the past, I’ve built some webpages and engaged in modifying hardwares during high school in Australia.
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Pham Dao Tan Loc - s3924306</h3>
+            <p class="font_default indent" style="line-height:1.5">
+                I’m a novice in IT and a freshman at RMIT. 
+                I have certain knowledge in using Python, Github, Linux or some web functions like HTML. 
+                During leisure hours, I’d watch the news or play video games. 
+                These help me to relax and connect with friends. 
+                Also documents technology and programming so I can use it for research and improve my IT knowledge. 
+                For my IT interest, I love to spend time learning and researching about Python, Github, HTML and some other technologies. 
+                From my perspective, Python and Github are not really difficult. 
+                However, my remember ability is not really good, within python for example have many structure and formula have to remember so that is my huge hurdle and I’m trying to improve. 
+                Beside that, my high school teacher taught and helped me experience some kind of technologies like AR, firework. 
+                I just joined the IT world in a short time because I don’t have much experience with technology. 
+                Some experience I got like making some programmes on Python and how to use many tools of Microsoft and Alphabet. 
+                Beside that, some complicated technology like AR, VR or cryptography that I had a period to experience when I was in grade 11. 
+                For my IT experience, I’ve developed certain video games mods for users to download and play with. 
+                Not only that, I’ve engaged in collaboration with peers in building a web page for a computer’s store.
+            </p>
+        </div>    
+    </div>
+    </div>
+
+    <div class="page">
+    <!-- LOC PHAM write Project Description's overview HTML -->
+    <!--Long formatted to fit with the page. Updated and remove some css atrributes, HTML element for overview-->
+        <div class="subpage">
+        <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;">Project Description</h1>
+        <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Overview</h2>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Topic: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+        The project’s goal is to develop a utility website for the finance industry;
+        it could also be considered a financial analysis tool. 
+        It serves to welcome financial assets’ exchangers as people to engage and have a 
+        functional tool to support their decision making process when deciding on buying or selling stocks, 
+        bonds, and many similar items. 
+        <br/> <br />
+
+        &nbsp &nbsp &nbsp &nbsp When users engage in the website, they’ll be prompted for assigning certain inputs in accordance with designated fundamental analysis formulas by developers. 
+        On a surface level, those formulas will remain as simple as possible with the given recommendations and perhaps graphs on certain locations of the website. 
+        Furthermore, there shall be a communication channel so that users can have the liberty to exchange their insights with others; thus, this project is to be somewhat of a social media platform aiming for the finance’s industry .
+        However, there will be options where users can expect to engage in deep technical 
+        formulas that will further support their decision making process on deciding the best optimal 
+        route for their financial assets allocation so that desirable outcome and foreseeable results can be obtained, 
+        however they’ll have to engage in a form of subscription for further accessibility to such features. 
+        </p>
+
+    <!--Motivation section by Long-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Motivation</h3>
+        <p class="font_default indent" style="line-height: 1.5">
+        The motivation for this project stems from the passionate desire for both personal 
+        development and engagement in helping others in identifying and selecting various types of financial assets, 
+        such as, stocks, bonds, and many similar items to obtain positive financial goals. 
+        The project in itself is fascinating due to its introduction for developers to have certain exposure to the field of finance by making them add available finance’s formulas. 
+        Not to mention, allowing beginner’s website developers to leverage front-end programming languages and various frameworks to create the project. 
+        As the world is currently within an expansion era of Machine Learning, Artificial Intelligence, and Big Data technologies, 
+        the demand for processing and gathering data is essential. Hence, by having this project available, various inputs from users can help developers and observers to identify best performing financial assets. 
+        Hopefully, with those inputs, data can be transferred to AI technologies to process and deliver automatic results that have desirable quality. By engaging
+        </p>
+        </div>    
+    </div>
+
+
+
+    <!--Long code on Landscape, Detailed description (Aims)-->
+    <div class="page">
+        <div class="subpage">
+            <p class="font_default" style="line-height: 1.5"> 
+            in the project’s development, future employers can expect its developers 
+            to have proficiency in leveraging available front-end programming languages 
+            and frameworks to create a functional application that harnesses data and processes 
+            them to deliver expected results for the users. 
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Landscape:</h3>
+            <p class="font_default indent" style="line-height: 1.5"> 
+            When observing the market, several similar websites have
+             been created with features that are alike to the project. Through browsing the Internet, sites like Seeking Alpha, Motley Fool Rule Breakers, Seeking Alpha’s Alpha Picks, 
+             and many more have similar characteristics to the team’s project features of being a financial analysis tool that support investing decisions [1]. 
+             However, the team’s project aims to offer financial analysis tools for users who are considered beginners to the finance industry and optional subscription services for advanced and technical analysis support to whoever has a desire to gather more insights of their respective investment choices. 
+             The team’s project also is different from these mentioned competitors because it has the option for users to engage 
+             in socialising among members to exchange information and developing parties that have similar goals; thus, helping them to develop informed decisions when selecting financial products for optimal results. 
+            </p>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Detailed Description</h2>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Aims: </h3>
+            <p class="font_default indent" style="line-height: 1.5">
+            In order to accomplish the project in accordance with the provided topic’s description. 
+            There are several aims and goals that the team has to develop and ascertain to realise the project into its fruition. 
+            When it comes to developing the project, the team hopes to design several features that would serve as the core functionality of the project.
+            Thus, the team wants to obtain three aims. The first aim is to develop engagement with the users. 
+            The second aim is creating a database management system. 
+            The third and final aim is to create encryption for information protection then host the entire website. 
+            <br/> <br />
+            &nbsp &nbsp &nbsp &nbsp To begin with ascertaining the first aim of developing engagement with the users. 
+            The team will begin with creating a functional financial analysis tool 
+            through leveraging the availability of Javascript, HTML, and CSS programming languages to create front-end applications. 
+            Thus, the team hopes to develop certain fundamental analysis formulas with 
+            </p>
+        </div>    
+    </div>
+
+    <!--Long's continue's on description Aims-->
+    <div class="page">
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+        graphs to describe and visualise the inputs from the users. 
+        Initially and naturally, the team has to commit to doing web research for available and reliable financial formulas. 
+        They have to take notes of these formulas from trusted financial sources and hopefully communicate their findings to finance’s professionals. 
+        The team also has to build a subscription functionality. After gathering the formulas, the team has to begin developing flowcharts to start the planning stage. 
+        When that is finished the team will move to developing various kinds of financial analysis tools in accordance with research and the planning. 
+        Finally, the team will test for bugs and logic errors. After those processes of building applications, the team will have to develop a login and sign up location, a social communication channel for information exchange between users, and apply certain UX’s design principles to ensure visual imagery that appeals to the users’ taste. 
+        Most of these implementations will be using similar design’s flow as mentioned previously for the functionalities. Thus, all of these will be serving as the front-end of the project to develop engagement with the users. The team will then  
+        <br/> <br />
+        &nbsp &nbsp &nbsp &nbsp In order for the development of a database management system to handle inputs from the front-end aspect of the project that includes financial analysis’s tool, user’s registration information, and social communication exchange, the team has to focus on several courses of actions. 
+        To begin, an implementation of the programming language of MySQL is expected. 
+        Then the team will design a diagram to represent various storage locations in accordance with the design’s principles. 
+        The team will then begin the development stage of writing the script that follows the created diagram. 
+        After that the team will run several tests with the front-end features to ensure that the system is functioning. 
+        Finally, the team will store the script and move onto the next development stage. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp The final stage occurs when the team will be using a hosting website known as “000webhost” to host both front-end and back-end scripts [2]. 
+        These items will be matched up through the hosting website and made available to the public. 
+        The domain name can be either registered for free but contains the URL link that has the host’s name or money can be expensed so that a custom domain name can be created. 
+        The information protection and encryption will be monitored by the website’s host and be protected with an advanced firewall and DDOS protection against data’s breach [2]. 
+        Hence, the team hopes to develop financial solutions for users through these three mentioned aims and their respective goals. 
+        </p>
+        </div>
+    </div>
+    <!--Long Description on Plan and Progress-->
+    <div class="page">
+        <div class="subpage">
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Plan and Progress</h3>
+        <p class="font_default indent" style="line-height:1.5">
+        To get down to specifics of the development there will be certain plans and progress that needs to be made in order to witness the project’s coming into its fruition.
+        Thus, the project development will be alloted within 16 weeks. 
+        The initial project stage of pre-development will take place in the initial 4 weeks where codes will not be written, 
+        but information gathering and planning will account the most for the project.
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Thus, within week 1, members will be assigned responsibility of doing research on available resources on the Internet in finding Financial formulas and its description. 
+        They then have to jot down that information for future references. Several websites that would be responsible for providing the formulas: Investopedia, EDUCBA, Corporate Finance Institute, Yahoo Finance, Finance Formula, and many others [3, 4, 5 ,6, 7].
+        Hence, through these reliable and trustworthy sources, formulas can be ascertained in an utmost accurate manner that remains true and valid within the industry of Finance. 
+        Once those formulas are accounted for, they will be kept in record by individual members of the team awaiting for a meeting to occur. 
+        Not only that in week 1, besides finding formulas for the project, team members will also have the opportunity to conduct research on various available competitors, who have similar features offered like the website. 
+        Members will also be told to create their own individual Github’s repository for their individual findings to be stored. When such things have been established they will be told to leave those findings and await week 4 for a meeting on deciding things that are to be considered suitable to the project’s development. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Week 2 and 3 will be focused on designing flow charts and diagrams for both the project’s website and its Database Management System. Members will be told on their respective responsibilities in accordance with the process of development. To be specific, there will be division when it comes to design and development of members’ roles. Certain individuals will be assigned to develop flowcharts that are about front-end features which includes formulas processing that prompt users input to process and deliver an output of desirable results. 
+        Such flowchart’s design should be followed with the usage of Javascript for future building of applications so that its variations in functions like loops, dictionaries, lists, and many more can be accounted for. 
+        Similarly, such design of flowchart will also be applicable for the graphs’ feature on every output of the formula. 
+        For the design of the front-end interface with HTML and CSS, the use of traditional flow-chart for other application programming languages like Python, Ruby, Javascript, and many others might not 
+        </p>
+        
+        </div>    
+
+    </div>
+
+    <div class="page">
+    <!--Long continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+            be applicable. Thus, to ensure the quality of the website’s design, our team will be focusing on visiting different websites to see various available website’s template for references and inspirations. 
+            Then our team will be creating a diagram that is somewhat similar to a roadmap or mind map, detailing the features that will encompass our eventual development of the website with HTML and CSS. For the diagram’s design of our project’s database management system, our team will be following the design of an Entity Relational Diagram’s design to ensure the positive outcome of having various entities or tables during the stage of development with MySQL programming languages. 
+            Our team will discuss what entities are to be made available to store respective inputs from the front-end. Hence, those tables will store information about user’s login and registration, site’s traffic, output of formulas, communication exchange with encryption to ensure privacy for the users, users with or without subscriptions. 
+            In general, this diagram and charts development will make up the majority of this week. When members are finished with their design by themselves or together, they’ll have to submit their chart’s design to the team’s repository, Google Docs, and communication channel to obtain involvement and recommendations from fellow members. 
+            <br /> <br />
+            &nbsp  &nbsp  &nbsp  &nbsp Week 4 will be the team's last pre-development period, this week will be focused on the team attempting to gather every inputs that were made in week 1-3 and trying to see every possible avenue or error that existed within the design of the charts and diagrams for both the front-end and back-end of the system. 
+            There will be moments when additional modifications are to be made where either features are to be removed or added. When those moments occur, the team will gather and respond to any inquiries or requests by team members in regards to these instances. 
+            The last day of this week will be the team finalisation of their agreed upon features throughout the design process. 
+            Thus, changes will not be made until the development of the project is concluded in week 16. 
+            This is to ensure that during the development of the project with programming languages, there won’t be pauses due to sudden disagreements of the features. 
+            Members are encouraged to take notes of any additional changes they would like to make at the end of week 16. 
+            <br /> <br />
+            &nbsp &nbsp &nbsp &nbsp After week 4, the team will be having a total of 12 weeks remaining for the project.
+            Thus, the development of the project will be splitted into 6 weeks for front end development and the other 6 weeks for backend development. 
+            The last week of the project will be seeing the project hosted and made available to the public. 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+    <!--Long continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default indent" style="line-height:1.5">
+        During week 5 to week 6, the team will centre its sole attention to developing front-end features.
+         Members will be assigned responsibilities to handle their respective tasks. 
+         There will be deadlines created so that certain tasks can be completed. 
+         From week 5 to week 6, members will be responsible for handling the web pages' design with HTML and CSS to make them as appealing and appropriate to prospective users’ taste. 
+         Several researched templates for inspiration will be selected and go into development. 
+         The design description will be as follows: tabs and options will remain to the left, user login/registration will be on the top-right corner, user’s activity will remain to the right, main functionalities like homepages will remain to the top with respective icons or symbols. 
+         The design will follow the flow of simplicity with more imagery and icons as much as possible. Week 6 will be seeing members finishing their design in relation to the front-end interface. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp From week 7 to week 10, members are expected to be focusing on designing the front-end application of the project. 
+        The usage and knowledge of Javascripts are a necessity for the completion of this activity.
+        Members have to follow the planned flow charts created in the week 1-4 as accurately as possible. 
+        No additional changes to what the charts have initially been created will be expected, those recommendations will be taken into account when the development comes into its finalisation at week 16. 
+        At this stage, members will be creating formulas for input as researched various graph designs are to be followed. 
+        A communication channel will be entailing the design with Javascript, an encryption feature will be developed as well to ensure users’ privacy. 
+        These features will be tested for bugs and logic errors on week 10 multiple times to ensure valid results and no runtime errors. 
+        Everything is to be uploaded to Github. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp From week 11 to week 15, members will be attempting to finish the design of the database management system with mySQL. 
+        The development will follow as close to the created diagram as possible, no additional changes or recommendations will be made at this stage.
+        Members will be instructed to participate in designing various entities or tables of a database to store various inputs coming from the front-end side.
+        These include financial formulas, outputs, users information like their account, subscription, website’s traffic, user’s payment history. 
+        The development will be tested and its results will go through various remunerations so that accurate results can be obtained from the frontend and stored with the backend. 
+        </p>
+        </div>    
+
+    </div>
+
+    <div class="page">
+    <!--Long's continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default indent" style="line-height:1.5">
+        For week 16, everything will be finalised and readied for hosting through “000webhost” for both the frontend and backend [2].
+        Various scripts will be obtained from members and the team to put into deployment.
+        But before such an occurrence, members are to be asked for additional recommendations.
+        Those inputs will be taken into consideration, if reasonable and necessary, the team will take immediate action to ensure such features are available.
+        When everything is finished and no recommendations are mentioned.
+        The team will begin deploying everything through the webhost.
+        The team will be using encryption and protective features provided by the host itself. 
+        When the deployment stage has been reached, the website will be made available to the public. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Based on the 16 weeks of development, the team will have encountered certain hurdles and obstacles along the way.
+        Members of the team might not be acquainted with the programming languages of HTML, CSS, and Javascript.
+        They might not know how to write mySQL script. 
+        Some of them may not even know how to create charts and diagrams. 
+        To ensure and bring everyone up to speed with these mentioned technicalities. 
+        Members are advised to commit to doing research themselves and correspond with those who are knowledgeable in these areas to be provided with additional support. 
+        Beyond the members, the project might not contain features or UX design that would appeal to the users’ taste. 
+        Several formulas could be not within the accuracy of giving the ideal results. 
+        The encryption from the web host might not be sufficient to handle the influx and complexity of input data. 
+        Perhaps certain features ought to be included to make the website more appealing and worthy for the users, but those remain beyond the scope of the current development and await additional upgrades in the future. 
+        Hence, if the ownership of this project was to be given to another team to work on, these concerns are to be addressed so that both the current development can be maintained to make way for future feature’s design. 
+        </p>
+        <!--Move to to Roles by Long-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Roles</h3>
+        <p class="font_default indent" style="line-height:1.5">
+            The technical roles of the team will not be included for the duration of the 16 weeks for this project. Thus, there won’t be technical designers or user interface designers.
+            This is to be the case due to members being fairly new to the world of software engineering and development.
+            However, hierarchy roles are to be accounted for with leader, secretary, and developers. 
+            For the role of leadership: Nguyen Kim Long, will be given such a task. He’ll be responsible for assigning tasks, formulating plans, organising members, and engaging with the design and development of the project. 
+            Secretary’s role will be given to Che Minh Quan, 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+        <div class="subpage">
+        <!--Continue Roles by Long-->
+        <p class="font_default" style="line-height:1.5">
+        his task is developing a timetable and keeping track of the project’s development.
+        He is to be aware of members’ engagement and remind them if they are to be not available.
+        He is to be responsible for engaging with the project and design development,
+        2 of the other members like Quan hung and Pham Dao Tan Loc are to be members of the project, their role is to engage with development in accordance with the leader’s guidance. 
+        They also have a responsibility to make suggestions and ensure the project’s run without bugs or errors. 
+        The roles are to be kept as guided. However, certain responsibilities can be delegated, updated, and added depending on the project’s requirements if needed. 
+        Overall, members are expected to be present and work on their assigned tasks as instructed by the team leader. 
+        </p>
+        <!--Move to scope and limits by Long-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Scope and limits: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+        The development of the project’s financial analysis tool will be focusing on several core fundamental features that are to be made for the users to engage.
+        Thus, the development will be targeting the design and integration of financial formulas from external sources through research.
+        These will prompt the users for certain inputs as in accordance with their respective and given formulas.
+        When an output is made, certain graphs, charts, and symbols will be displayed with the given formulas.
+        The project will also include adding social media communication functionality so that users can engage with fellow site’s users to exchange information in regards to their respective finance issues.
+        The group’s and friend’s features will be included in the development, as well to work in conjunction with the available communication channels. 
+        Another important feature is the login and signup feature where users’ data will be stored. 
+        Not to mention user’s data like personal information and payment’s method will be accounted for too. 
+        The final main feature is to include a subscription page, where users can grant access to sophisticated features and formulas to obtain more technical outputs in relation to their financial design. 
+        Thus, these primary features will serve as the team main’s scope and its limit due to the availability of 4 members and 16 weeks of design and development. 
+        Besides those prioritised features, several additional features will have their own spotlight in the future beyond the 16th week mark like emojis for chats, financial news, more financial data, and many more will be included and expanded, eventually. 
+        </p>
+        <!--Tools and Technologies-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Tools and Technologies: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+            For this project, the team will be using and integrating several available
+            tools and technologies to ensure the completion of the established objectives. 
+            Members can use either 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+        both operating systems like Windows or MacOS for the project’s development. 
+        The programming languages for developing the front-end side that includes the style and format would be through using HTML, CSS, and Javascript. 
+        While for the back-end side, the adoption of MySQL is to be used to build relational tables that would be responsible for storing various kinds of data coming from the front-end. 
+        For creating the charts and diagrams, the team will be using Diagram.io to develop those things. 
+        Furthermore, the use of either Visual Studio Code or Visual Code it is to be in the preferences of members and their respective experience with such Integrated Development Environment. 
+        The use of Github is to serve as the location for storing technical code and scripts [9]. 
+        Finally, “000webhost” will be responsible for hosting the developed script for both frontend and backend [2]. 
+        This hosting website will ensure security risk for the project and make the system available for the public. 
+        </p>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Testing: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+            For the project’s testing, the team will be committing to extensive testing upon any designs or code’s development. Those codes have to be following the created diagrams and charts. To ensure such quality, members will be asked to correspond with the leader and secretary as urgently as possible whenever they encounter any issues. It is expected that members are capable and competent in handling the design and the coding for their respective responsibilities. During the design week of 1 to 4, diagrams and charts will frequently be checked by the leader. When week 4 is reached the finalisation of pre-code development will take place and everyone will have ample opportunities to review and correspond with the proposed design. For the coding weeks from 5 to 16, codes will be reviewed by the leader and secretary on Sunday of every week. If errors are to be found, corresponding members who are in charge of handling the codes will be inquired and be asked for repairs. Within their own respective coding tasks, members will have to write their own time and name through commenting on their respective codes. This is to ensure that everyone can see and acknowledge certain members' involvement with sections of the code. By week 16, a meeting will be held for the team where the leader will act like a random user who is using the platform, he’ll demonstrate and engage with various features offered by the project’s website.
+            If errors are to be found during the demo, then solutions will be established and members will have the duties to tackle such issues. 
+            Thus, it is expected that through these rigorous testing, the quality of the project will be as expected and be made available for future development of 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+        new additional features.
+        Not only that, it would allow new members who are oblivious to the project to continue 
+        and expand the project further. 
+        </p>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Timeframe: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+        This section represents our team general’s timetable with respective responsibilities assigned to four members within the span of 16 weeks.
+        This will include the design of diagrams and charts, creation of frontend and backend with codes, 
+        and time for writing the report. 
+        </p>
+        <!--Create table by Long-->
+        <table style="width:100%">
+            <tr><!--Table headers by Long-->
+              <th>Week</th>
+              <th>Long</th>
+              <th>Quan</th>
+              <th>Hung</th>
+              <th>Loc</th>
+            </tr>
+            <tr>
+              <td style ="text-align: center;">1</td>
+              <td style="text-align:left">
+                _Assign tasks to members and self. <br />
+                _Commit to doing research on available financial formulas and making recommendations. <br />
+                _Responsible for writing the initial sections of the report. <br />
+                _Develop communication channels, Github’s repository, and Google Docs for the report <br />
+                </td>
+              <td>_Being attentive to individual members' responsibilities as assigned.
+                _Commit to writing a report's section as assigned by the leader.
+                _Conduct research on available financial formulas. </td>
+              <td> _Conducting research on financial formulas and make suggestions on what to obtain for the project. </td>
+              <td> _ Collaborating with fellow members to write reports <br />
+                _ Conduct research on similar competition and identify suitable design’s templates for future usage. 
+                </td>
+            
+            </tr>
+          </table>
+        
+        </div>    
+
+    </div>
+<!-- Risks by Quan Hung-->
+    <div class="page">
+        <div class="subpage">
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Risks:</h3>
+            <p style = "font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">
+                When engaging with the design of the project’s several risks will be an occurrence for the team. 
+                These risks include lack of knowledge in certain frameworks or programming languages, risks of bugs and errors, risk of fail logic, risk of poor UX’s design. 
+                The first risk is the utmost vital, because of a lack of experience and expertise in available frameworks and programming languages, team’s member may encounter more times and errors through not knowing the available tools and modules to integrate for development. 
+                The second risk is through bugs and errors, members will be running into bugs and errors that could create syntax, runtime, and logic errors which affects the project’s quality and cause more time for repairs. The third risk is through faulty logic of the program which creates common sense errors. 
+                This might not be detected and go beyond the scope of identifying for developers. However, when left unchecked it could create poor experience from the users. The last risk is through low quality UX’s design. This could affect the users visual taste, which would dissuade users from returning and maintaining their stay after their initial visit. 
+                In general, these risks are important and ought to be considered. Failures from addressing them could result in dire consequences for the project’s development. 
+                Thus, it is to the team members to keep a watchful eye for spotting these risks.
+                </p>
+        </div>    
+
+    </div>
+<!-- Group processes and communication by Quan Hung-->
+    <div class="page">
+        <div class="subpage">
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Group processes and communication:</h3>
+            <p style = "font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">
+                The initial component to thriving is having good communication and contributions between each member. 
+                Therefore, we have spent time in the first meeting session introducing ourselves among the team members, which allows us to know and provide proper tasks based on each person's traits and personalities. 
+                According to our leader, Mr. Kim Long, we are expected to have at least one face-to-face meeting per week in order to update each member's status and progress, and if there are any errors or difficulties, they will be the main focus of concern in order to help each other accomplish their response. 
+                Despite that, it is a challenge for us to determine a fixed time for the meeting since everyone has their own schedule for their jobs, and therefore, we agree with an alternative approach that we will employ a virtual communication application and email to organise a discussion as necessary. 
+                We consider using Discord, a widely known social VoIP (voice over Internet protocol) service that allows users to communicate through the Internet by messaging or voice calling, to report and exchange information with each other [8]. 
+                In spite of that, we exploited the tutorial session to have a face-to-face meeting after we ended the lesson with the professor due to the importance of having an offline meeting. 
+                For the situation where one or more members of the group are inactive, we have our own regulations that we will send an alert message three times, and if there is no comment, the leader will expose the situation to the higher academic authority involved in the situation. 
+                As we trust each other, we believe that each person has a responsibility to contribute to the task and update the contribution session in Discord every day.</p>
+            
+            <h1 style="font: size 18pt; font-family:'Times New Roman', Times, serif;">Skills and Jobs:</h1>
+            <p style = "font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">
+                When it comes to deciding on 4 ideal members for the project so that optimal results can be achieved, several characteristics would need to be considered. 
+                Those would be their technical skills and team experience. Thus, when searching for the first member, we'd like to have someone who is proficient in web development with an expertise in designing frontend interface and features using programming languages and frameworks that goes beyond what has been mentioned previously for the project. 
+                The second member for the project is to be someone who can deal with development in the backend system. This member should be knowledgeable in the system's design and its variation in technologies and programming languages. 
+                Contributions and recommendations from this member is important. The third member should be someone who has knowledge in designing UX so that the website can be created to appeal towards users’ personal taste to obtain their future’s return to the website. 
+                The fourth member ought to be someone who can have certain businesses’ skill, so that this person can make certain business wise inputs for</p>
+        </div>    
+
+    </div>
+<!-- Skills and Jobs by Quan Hung-->
+    <div class="page">
+        <div class="subpage">
+            <p style = "font-family: 'Times New Roman'; line-height: 1.5;">
+                the website’s design to remain valid to prospective users. 
+                This is to ensure that the features and functionality selections for the website will be the ones that are ideal and necessary. 
+                Thus, this person is responsible for committing to research and providing recommendations for ideal features. 
+                These four members ought to be hard-working, loyal, and can function within a team. 
+                They are to be communicative and always be in readiness with passion in suggestions and finding errors of the projects. 
+                They are to be on-time, and remain knowledgeable among their respective skillsets. 
+                Thus, with such members the project ought to be finished within the allotted time and quality. </p>
+            
+            
+                
+<!-- Group reflection by Quan Hung-->            
+            <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;">Group reflection:</h1>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Nguyen Kim Long:</h2>
+            <p style="font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">	
+                Based on my experience working with the team, it is without a doubt a pleasant experience to be collaborating with members who are hard-working and knowledgeable in their respective skill sets. 
+                Members are always on time and stand in readiness for given responsibilities. 
+                While it is true that certain absences did occur, members are always responsive to deliver their issue and help me in finding optimal solutions for their problems so that the processes of writing the report, coding, and presentation can be resumed. 
+                However, I’m not quite pleased with the entire team novice experience with the available technologies. This is not to be a very big issue, since the majority of the members are new to this industry. 
+                Thus, those expertise are to be expected later in the future. I was surprised with members who are hard-working and enthusiastically active, they are always willing to commit more than meets the eye to witness the project’s completion. 
+                By engaging with the</p>
+        </div>    
+
+    </div>
+
+    <div class="page">
+        <div class="subpage"> 
+            <p style="font-family: 'Times New Roman'; line-height: 1.5; ">
+                team, I’ve learned that it takes less time to finish a project with the support of hard-working and responsible team members. 
+                Nevertheless, I look forward to working in such a team with members like these in the future.</p>
+
+        
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Che Minh Quan:</h2>
+            <p style="font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">For these projects with my team members, it is a pleasure to work with many talented individuals with unique skill sets and knowledge in many fields, especially in updating the latest technology trend and its use for our project. 
+                The group displays a well built plan that incorporates each of our members' individuals that display different levels of understanding regarding coding language, and IT courses overall. 
+                They are all very details oriented with realistic expectations that each group member must fulfil within a limited timeline as fast as possible. 
+                It makes me do my best and give my best for the group as much as possible with my own knowledge and skill sets too. 
+                However, I also experience setbacks due to my own inattentiveness in group discussions that cause my leader not please with my scatter participation in group work, as my greatest weakness is in learning to work with those that possess different background from me that makes me feel not capable of adapting in working with people as much as I think I could. 
+                I possess an individual streak that borders on nonconformity toward the group guidelines that get me in trouble with myself. 
+                However, I will do my best ịn correct my own fallibility as part of learning experience in these courses for the betterment of myself and the group overall. 
+                One thing that I learned for myself is that each member must perform to the best of their abilities in each individual task and must carry their weight in this project with professionalism that is expected from each of us. 
+                I am grateful to join a wonderful group with many talented individuals that drive me to be the best version of myself as much as possible to accomplish our group goals that we have drawn for ourselves. </p>
+
+        
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Pham Dao Tan Loc:</h2>
+            <p style="font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">From my perspective, we already did well in this assignment. 
+                We worked on the technology of financial service that can have a new platform for humans to control, save and trade goods. 
+                Basically, we provided enough for requirements and already bonus examples and supporting details to help everyone and us too to understand easier. 
+                Our team showed some tools like Javascript, HTML as a way that we will focus on if we want to start the project.</p>
+        
+        </div>
+    </div>
+    <div class="page">
+        <div class="subpage">
+            <p style="font-family: 'Times New Roman'; line-height: 1.5;">
+                Actually, we did some research on the things we wrote on the internet and some were from university. 
+                We had a private group for roles division and discussion for this assignment. 
+                Some good things were that we had interactions with each other to carry out the assignment even though it may not have been as we had expected by some hurdles like thinking. 
+                That meant we had to improve teamwork and coordination ability. Besides that, I was really surprised with Long's idea. 
+                I saw him prepare for this project in a long time so that he showed every idea so smoothly. 
+                Finally, one thing I learned from my group is how to work together and how it is important to me in the future.</p>
+            
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Quan Hung:</h2>
+            <p style="font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">Everything seems to work well, as our group is expected to do throughout the entire project. 
+                Nevertheless, a number of errors were committed in the process, as well as difficulties among the team. 
+                Initially, we were discussing our aspects with regard to the project idea that was proposed by the leader, Nguyen Kim Long. 
+                Due to the specialization in several areas, research is expected before moving forward. Afterwards, tasks were assigned at the first meeting. 
+                There are, however, several matters that arise post-discussion. Due to the burden of schedules, it's hard to find a reasonable time for meeting face-to-face. 
+                Therefore, we decided to work remotely and discuss through social sites. 
+                Another thing is that the project strictly requires proficiency in certain programming languages, such as Javascript, HTML, and CSS. Fortunately, everything is settled down. 
+                Throughout the process, I was amazed at all the opinions that my teammates proposed, especially the idea of using financial formulas to give an outstanding analysis for the user. 
+                Thanks to that, I am capable of learning new things regarding other disciplines, which I wish to add to my foundational knowledge in order to operate my career pathway well. 
+                Likewise, I learned a couple of soft skills that I was not good at and improved them, such as leadership, problem-solving, communicating, and collaboration.</p>
+            
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Group:</h2>
+            <p style="font-family: 'Times New Roman'; line-height: 1.5; text-indent: 50px;">
+                After we finished the assignment, we checked together again and compiled a few ideas for this general reflection. 
+                First, we have provided related details with regards to the "Financial Gen" project including background information, structure, purpose,... 
+                We tried together to fully meet the assignment's requirements which made it quite difficult for us to search and research data to fill the requirements. 
+                Especially in the "Detailed description" section, it has quite a few requirements and the description is also long. Especially when each </p>
+        </div>
+    </div>    
+    <div class="page">
+        <div class="subpage">
+            <p style="font-family: 'Times New Roman'; line-height: 1.5;">
+                person has their own opinion and thoughts about each item. 
+                Therefore, it took us a lot of time to complete it so that we could meet the needs of the article and not ignore any comments or contributions from the members. 
+                Although we have completed this assignment, it is only on paper and we still have a live presentation in class, which is a real challenge for us. Anyway, we'll try to use the little time we have left to prepare for the day as best we can. 
+                However, there were also many things that we did well like we completed before the deadline. This is a very important factor not only in terms of grades but also our own time and pressure regarding the presentation as well as each person's own free time for their own lives. 
+                As mentioned above, consistency in assignment time and content is something we need to improve. Since this was just an average project, we at least managed to do what we needed to do despite the difficulties. But with larger-scale projects in the future, it may turn from a barrier into psychological pressure if we continue to stick together. 
+                During the implementation process, the various contributions were obviously what surprised us the most. Each person has a different perspective, which leads to a series of ideas being born. Obviously not all of them are suitable and usable, but they are still the factors that create a breakthrough for us. 
+                And in a group environment, gaining knowledge from each other is definitely the most valuable lesson we can learn. 
+                It can be a tool to help us understand each other better, it also helps us be open-minded. 
+                From there, it helps improve the thinking and soft abilities of each member.</p>
+               
+        </div>
+    </div>  
+
+        </div>    
+
+    </div>
+
+
+
+    </div>
+</div>
 
 </body>
 </html>
