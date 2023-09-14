@@ -8,5 +8,8 @@ Che Minh Quan - s3893635
 Quan Hung - s3980813
 Pham Dao Tan Loc - s3924306 
 
+The link to the website: https://longs1709.github.io/Group6_IIT_A3/Group6_IIT_A3.html 
+
+
 
 
