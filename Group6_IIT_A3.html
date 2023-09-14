@@ -4,13 +4,401 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group6_IIT_A3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font: 12pt "Times New Roman";
+        }
+        .font_default{
+            font-weight: lighter;
+            font-size: 12pt;
+        }
+        .indent{
+            text-indent: 34px;
+        }
+            
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .page {
+            width: 21.1cm;
+            min-height: 29.7cm;
+            padding: 2cm;
+            margin: 0.5cm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-weight: lighter;
+        }
+        .subpage {
+            padding: 1cm;
+            border: 5px red solid;
+            /*height 237mm*/
+            height: 260mm;
+            outline: 2cm white solid;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            .page {
+                margin: auto;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+     }</style>
 </head>
 <body>
-<h1>Something</h1>
+
+<div class="book">
+    <!--Write cover page Nguyen Kim Long-->
+    <div class="page">
+        <div>
+            <img style="display:block; margin-left: auto; margin-right: auto; width: 80%;" src="RMIT image.svg.png" alt="logo of RMIT">
+            <br />
+            <br />
+            <br />
+            <h1 class="font_default" style=" font-size: 18pt; text-align: center">Assignment 3: Our IT Project</h1>
+            <br />
+            <br />
+            <br />
+            <h1 class="font_default" style="font-size: 16pt; text-align: center; line-height: 1.5"> 
+                COSC2083 (2392) <br />
+                Semester 2 2023 <br />
+                Lecturer: Nguyen Minh Long <br />
+                RMIT University Vietnam <br />    
+            </h1>
+            <br />
+            <p style="font-weight:bold; font-size:16pt; text-align: center;">Prepared by:</p>
+            <p style="font-weight:lighter; font-size:16pt; text-align: center; line-height: 1.5"> 
+                Nguyen Kim Long - s4031709 <br/>
+                Che Minh Quan - s3893635   <br/>
+                Quan Hung - s3980813        <br/>
+                Pham Dao Tan Loc - s3924306 <br/>
+            </p>
+            <br />
+            <h1 style="font-weight: lighter; font-size:12pt; text-align: center; line-height: 1.5; font-style: italic">I declare that in submitting all work for this assessment I have read, understood and agree to the content
+                and expectations of the Assessment declaration 
+            </h1>
+            <br />
+            <h1 style="font-weight:lighter; font-size:16pt; text-align:center">Date submitted: September 18, 2023 </h1>
+            <br />
     
-
-
-
+        </div>
+    </div>    
     
+    
+    </div>
+    <!--Write table of content K.Long-->
+    <div class="page">
+        <div class="subpage">Table of content</div>
+            
+    </div>
+    </div>
+    <!--Write team profile K.Long-->
+    <div class="page">
+        <div class="subpage">
+            <h1 style="font-size:18pt; font-family:'Times New Roman, Times, serif;">Team profile</h1>
+            <h2 style="font-size:16pt; font-family:'Times New Roman, Times, serif;">Team name</h2>
+            <p class="font_default" style="line-height:1.5">
+                &nbsp &nbsp &nbsp &nbsp The team’s name through consensus among members is “FinancialGen”. 
+                This is going to be the team’s official name throughout the Assignment 3 progress. 
+                The purpose for selecting the name is due to our goal of developing software solutions for the Finance sector; 
+                while the name: 
+                “Gen” represents the demographics on the receiving end like middle-aged, seniors, and more. 
+                Thus, the team hopes to develop, solve, and handle any emerging challenges for both the community and the market. 
+            </p>
+            <h2 style="font-size:16pt; font-family:'Times New Roman, Times, serif;">Personal information</h2>
+            <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif; font-weight:bold">Nguyen Kim Long - s4031709</h3>
+            <p class="font_default indent" style="line-height:1.5">Currently a freshman student at RMIT University in Vietnam, majoring in IT. 
+                Proficient in writing Python and Linux, MySQL. 
+                During my free time, I like to read or watch content about computer areas like web development, AI, and coding languages. 
+                Besides computers, I’m interested in learning mathematics. 
+                Not only that, I like reading current news developments in areas like politics, business, and science. 
+                Within the sphere of Information Technology, I’ve got a preference for developing web solutions for individuals and businesses as a full-stack developer.
+                I’m also keen on integrating machine learning algorithms into any projects that I have worked on to develop automated results. 
+                As a recent entrant to the field of Information Technology, my latest and most recent development is in solving Python inquiries, developing database management systems, and commanding MacOS terminals using Linux. 
+                Not only that, I have had satisfactory attempts in using Github’s repositories, creating branches, assigning commits, and making “Pull” requests.
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif; font-weight:bold">Che Minh Quan - s3893635</h3>
+            <p class="font_default indent" style="line-height:1.5">
+                Currently, RMIT’s students majoring in IT have experience in coding from high school, and skills in HTML, Javascript, and Python. 
+                Hobbies: Love exploring AI sentients. Often questioned with hypothetical questions of Artificial Intelligence mimicking human intellect. 
+                For IT Interests, I practice Python, Javascript, and C++ in my free time. I coded robots in high school, I also have experience in HTML by creating a website during high school. 
+                Learning coding makes me like AI. For IT experience, I have built an e-commerce website, and a restaurant’s webpage, and participated in coding competitions. 
+            </p>
+        </div>    
+    </div>
+    </div>
+
+    <div class="page">
+    <!--Write team profile K.Long-->
+        <div class="subpage">
+            <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif; font-weight:bold">Quan Hung - s3980813 </h3>
+            <p class="font_default indent" style="line-height:1.5">
+                I’m currently majoring in IT at RMIT, and have six years of study abroad in Australia. For hobbies, I love to integrate video graphics cards (VGAs) into a motherboard as well as watch videos about building gaming PCs. 
+                Additionally, I found my interest in several coding videos where coders show both logical thinking and technical skills to solve issues. Finally, I draw a lesson that no matter how much time it takes to complete, 
+                as long as you stick with your plan, you will find tremendous approaches for yourself to select which is the most efficient and will let you see it bear fruit. My IT interest is through acquainting with certain IT sections like writing Python and C#. 
+                Furthermore, I studied fundamental concepts in computing science, including database concepts and data queries using SQL language, principles of good GUI design, and computer components. In addition, I currently gained knowledge of Linux commands, HTML and CSS. 
+                In the past, I’ve built some web pages and engaged in modifying hardware during high school in Australia.
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif; font-weight:bold">Pham Dao Tan Loc - s3924306</h3>
+            <p class="font_default indent" style="line-height:1.5">
+                I’m a novice in IT and a freshman at RMIT. 
+                I have certain knowledge in using Python, Github, Linux, and some web functions like HTML. 
+                During leisure hours, I’d watch the news or play video games. 
+                These help me to relax and connect with friends. 
+                Also documents technology and programming so I can use it for research and improve my IT knowledge. 
+                For my IT interest, I love to spend time learning and researching Python, Github, HTML, and some other technologies. 
+                From my perspective, Python and GitHub are not really difficult. 
+                However, my remembering ability is not really good, Python for example has many structures and formulas have to remember so that is my huge hurdle and I’m trying to improve. 
+                Besides that, my high school teacher taught and helped me experience some kinds of technologies like AR, and fireworks. 
+                I just joined the IT world in a short time because I don’t have much experience with technology. 
+                Some experience I got like making some programs on Python and how to use many tools of Microsoft and Alphabet. 
+                Besides that, some complicated technologies like AR, VR or cryptography that I had a period to experience when I was in grade 11. 
+                For my IT experience, I’ve developed certain video game mods for users to download and play with. 
+                Not only that, I’ve engaged in collaboration with peers in building a web page for a computer store.
+            </p>
+        </div>    
+    </div>
+    </div>
+
+    <div class="page">
+    <!-- LOC PHAM write Project Description's overview HTML -->
+    <!--Long formatted to fit with the page. Updated and removed some CSS attributes, HTML element for overview-->
+        <div class="subpage">
+        <h1 style="font-size:18pt; font-family:'Times New Roman, Times, serif;">Project Description</h1>
+        <h2 style="font-size:16pt; font-family:'Times New Roman, Times, serif;">Overview</h2>
+        <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif; font-weight:bold">Topic: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+        The project’s goal is to develop a utility website for the finance industry;
+        It could also be considered a financial analysis tool. 
+        It serves to welcome financial assets’ exchangers as people to engage and have a 
+        functional tool to support their decision-making process when deciding on buying or selling stocks, 
+        bonds, and many similar items. 
+        <br/> <br />
+
+        &nbsp &nbsp &nbsp &nbsp When users engage in the website, they’ll be prompted to assign certain inputs in accordance with designated fundamental analysis formulas by developers. 
+        On a surface level, those formulas will remain as simple as possible with the given recommendations and perhaps graphs on certain locations of the website. 
+        Furthermore, there shall be a communication channel so that users can have the liberty to exchange their insights with others; thus, this project is to be somewhat of a social media platform aiming for the finance’s industry .
+        However, there will be options where users can expect to engage in deep technical 
+        formulas that will further support their decision-making process on deciding the best optimal 
+        route for their financial assets allocation so that desirable outcomes and foreseeable results can be obtained, 
+        however, they’ll have to engage in a form of subscription for further accessibility to such features. 
+        </p>
+
+    <!--Motivation section by Long-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif;">Motivation</h3>
+        <p class="font_default indent" style="line-height: 1.5">
+        The motivation for this project stems from the passionate desire for both personal 
+        development and engagement in helping others in identifying and selecting various types of financial assets, 
+        such as, stocks, bonds, and many similar items to obtain positive financial goals. 
+        The project in itself is fascinating due to its introduction for developers to have certain exposure to the field of finance by making them add available finance formulas. 
+        Not to mention, allowing beginner’s website developers to leverage front-end programming languages and various frameworks to create the project. 
+        As the world is currently within an expansion era of Machine Learning, Artificial Intelligence, and Big Data technologies, 
+        the demand for processing and gathering data is essential. Hence, by having this project available, various inputs from users can help developers and observers to identify best performing financial assets. 
+        Hopefully, with those inputs, data can be transferred to AI technologies to process and deliver automatic results that have desirable quality. By engaging
+        </p>
+        </div>    
+    </div>
+
+
+
+    <!--Long code on Landscape, Detailed description (Aims)-->
+    <div class="page">
+        <div class="subpage">
+            <p class="font_default" style="line-height: 1.5"> 
+            in the project’s development, future employers can expect its developers 
+            to have proficiency in leveraging available front-end programming languages 
+            and frameworks to create a functional application that harnesses data and processes 
+            them to deliver expected results for the users. 
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif;">Landscape:</h3>
+            <p class="font_default indent" style="line-height: 1.5"> 
+            When observing the market, several similar websites have
+             been created with features that are similar to the project. Through browsing the Internet, sites like Seeking Alpha, Motley Fool Rule Breakers, Seeking Alpha’s Alpha Picks, 
+             and many more have similar characteristics to the team’s project features of being a financial analysis tool that supports investing decisions [1]. 
+             However, the team’s project aims to offer financial analysis tools for users who are considered beginners to the finance industry and optional subscription services for advanced and technical analysis support to whoever has a desire to gather more insights of their respective investment choices. 
+             The team’s project also is different from these mentioned competitors because it has the option for users to engage 
+             in socializing among members to exchange information and developing parties that have similar goals; thus, helping them to develop informed decisions when selecting financial products for optimal results. 
+            </p>
+            <h2 style="font-size:16pt; font-family:'Times New Roman, Times, serif;">Detailed Description</h2>
+            <h3 style="font-size:14pt; font-family:'Times New Roman, Times, serif; font-weight:bold">Aims: </h3>
+            <p class="font_default indent" style="line-height: 1.5">
+            In order to accomplish the project in accordance with the provided topic’s description. 
+            There are several aims and goals that the team has to develop and ascertain to bring the project to fruition. 
+            When it comes to developing the project, the team hopes to design several features that would serve as the core functionality of the project.
+            Thus, the team wants to obtain three aims. The first aim is to develop engagement with the users. 
+            The second aim is to create a database management system. 
+            The third and final aim is to create encryption for information protection and then host the entire website. 
+            <br/> <br />
+            &nbsp &nbsp &nbsp &nbsp To begin with ascertaining the first aim of developing engagement with the users. 
+            The team will begin with creating a functional financial analysis tool 
+            by leveraging the availability of Javascript, HTML, and CSS programming languages to create front-end applications. 
+            Thus, the team hopes to develop certain fundamental analysis formulas with 
+            </p>
+        </div>    
+    </div>
+
+    <!--Long's continue's on description Aims-->
+    <div class="page">
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+        graphs to describe and visualize the inputs from the users. 
+        Initially and naturally, the team has to commit to doing web research for available and reliable financial formulas. 
+        They have to take notes of these formulas from trusted financial sources and hopefully communicate their findings to finance professionals. 
+        The team also has to build a subscription functionality. After gathering the formulas, the team has to begin developing flowcharts to start the planning stage. 
+        When that is finished the team will move to developing various kinds of financial analysis tools in accordance with research and planning. 
+        Finally, the team will test for bugs and logic errors. After those processes of building applications, the team will have to develop a login and sign-up location, a social communication channel for information exchange between users, and apply certain UX’s design principles to ensure visual imagery that appeals to the users’ taste. 
+        Most of these implementations will be using a similar design flow as mentioned previously for the functionalities. Thus, all of these will serve as the front end of the project to develop engagement with the users. The team will then  
+        <br/> <br />
+        &nbsp &nbsp &nbsp &nbsp In order for the development of a database management system to handle inputs from the front-end aspect of the project that includes a financial analysis tool, user’s registration information, and social communication exchange, the team has to focus on several courses of actions. 
+        To begin, an implementation of the programming language of MySQL is expected. 
+        Then the team will design a diagram to represent various storage locations in accordance with the design’s principles. 
+        The team will then begin the development stage of writing the script that follows the created diagram. 
+        After that, the team will run several tests with the front-end features to ensure that the system is functioning. 
+        Finally, the team will store the script and move on to the next development stage. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp The final stage occurs when the team will be using a hosting website known as “000webhost” to host both front-end and back-end scripts [2]. 
+        These items will be matched up through the hosting website and made available to the public. 
+        The domain name can be either registered for free but contains the URL link that has the host’s name or money can be expensed so that a custom domain name can be created. 
+        The information protection and encryption will be monitored by the website’s host and be protected with an advanced firewall and DDOS protection against data breaches [2]. 
+        Hence, the team hopes to develop financial solutions for users through these three mentioned aims and their respective goals. 
+        </p>
+        </div>
+    </div>
+    <!--Long Description on Plan and Progress-->
+    <div class="page">
+        <div class="subpage">
+        <h3 style="font-size:14pt; font-family: Times New Roman, Times, serif;">Plan and Progress</h3>
+        <p class="font_default indent" style="line-height:1.5">
+        To get down to specifics of the development there will be certain plans and progress that need to be made in order to witness the project’s coming to its fruition.
+        Thus, the project development will be allocated within 16 weeks. 
+        The initial project stage of pre-development will take place in the initial 4 weeks where codes will not be written, 
+        but information gathering and planning will account most for the project.
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Thus, within week 1, members will be assigned the responsibility of doing research on available resources on the Internet to find Financial formulas and its description. 
+        They then have to jot down that information for future reference. Several websites that would be responsible for providing the formulas: Investopedia, EDUCBA, Corporate Finance Institute, Yahoo Finance, Finance Formula, and many others [3, 4, 5 ,6, 7].
+        Hence, through these reliable and trustworthy sources, formulas can be ascertained in the utmost accurate manner that remains true and valid within the industry of Finance. 
+        Once those formulas are accounted for, they will be kept in the record by individual members of the team waiting for a meeting to occur. 
+        Not only that in week 1, besides finding formulas for the project, team members will also have the opportunity to conduct research on various available competitors, who have similar features offered like the website. 
+        Members will also be told to create their own individual Github’s repository for their individual findings to be stored. When such things have been established they will be told to leave those findings and await week 4 for a meeting on deciding things that are to be considered suitable to the project’s development. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Weeks 2 and 3 will be focused on designing flow charts and diagrams for both the project’s website and its Database Management System. Members will be told on their respective responsibilities in accordance with the process of development. To be specific, there will be division when it comes to design and development of members’ roles. Certain individuals will be assigned to develop flowcharts that are about front-end features which includes formulas processing that prompt users input to process and deliver an output of desirable results. 
+        Such flowchart’s design should be followed with the usage of Javascript for future building of applications so that its variations in functions like loops, dictionaries, lists, and many more can be accounted for. 
+        Similarly, such a design of flowchart will also be applicable to the graphs’ feature on every output of the formula. 
+        For the design of the front-end interface with HTML and CSS, the use of traditional flow-chart for other application programming languages like Python, Ruby, Javascript, and many others might not 
+        </p>
+        
+        </div>    
+
+    </div>
+
+    <div class="page">
+    <!--Long continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+            be applicable. Thus, to ensure the quality of the website’s design, our team will be focusing on visiting different websites to see various available website templates for references and inspiration. 
+            Then our team will be creating a diagram that is somewhat similar to a roadmap or mind map, detailing the features that will encompass our eventual development of the website with HTML and CSS. For the diagram design of our project’s database management system, our team will be following the design of an Entity Relational Diagram’s design to ensure the positive outcome of having various entities or tables during the stage of development with MySQL programming languages. 
+            Our team will discuss what entities are to be made available to store respective inputs from the front end. Hence, those tables will store information about the user’s login and registration, site traffic, output of formulas, and communication exchange with encryption to ensure privacy for the users, users with or without subscriptions. 
+            In general, this diagram and chart development will make up the majority of this week. When members are finished with their design by themselves or together, they’ll have to submit their chart’s design to the team’s repository, Google Docs, and communication channels to obtain involvement and recommendations from fellow members. 
+            <br /> <br />
+            &nbsp  &nbsp  &nbsp  &nbsp Week 4 will be the team's last pre-development period, This week will be focused on the team attempting to gather every input that was made in week 1-3 and trying to see every possible avenue or error that existed within the design of the charts and diagrams for both the front-end and back-end of the system. 
+            There will be moments when additional modifications are to be made where either features are to be removed or added. When those moments occur, the team will gather and respond to any inquiries or requests by team members in regard to these instances. 
+            The last day of this week will be the team finalization of their agreed-upon features throughout the design process. 
+            Thus, changes will not be made until the development of the project is concluded in week 16. 
+            This is to ensure that during the development of the project with programming languages, there won’t be pauses due to sudden disagreements of the features. 
+            Members are encouraged to take notes of any additional changes they would like to make at the end of week 16. 
+            <br /> <br />
+            &nbsp &nbsp &nbsp &nbsp After week 4, the team will be having a total of 12 weeks remaining for the project.
+            Thus, the project's development will be split into 6 weeks for front-end development and the other 6 weeks for back-end development. 
+            The last week of the project will be seeing the project hosted and made available to the public. 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+    <!--Long continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default indent" style="line-height:1.5">
+        During week 5 to week 6, the team will center its sole attention on developing front-end features.
+         Members will be assigned responsibilities to handle their respective tasks. 
+         There will be deadlines created so that certain tasks can be completed. 
+         From week 5 to week 6, members will be responsible for handling the web pages' design with HTML and CSS to make them as appealing and appropriate to prospective users’ taste. 
+         Several researched templates for inspiration will be selected and go into development. 
+         The design description will be as follows: tabs and options will remain to the left, user login/registration will be on the top-right corner, user’s activity will remain to the right, main functionalities like homepages will remain to the top with respective icons or symbols. 
+         The design will follow the flow of simplicity with more imagery and icons as much as possible. Week 6 will be seeing members finishing their design in relation to the front-end interface. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp From week 7 to week 10, members are expected to be focusing on designing the front-end application of the project. 
+        The usage and knowledge of Javascript are a necessity for the completion of this activity.
+        Members have to follow the planned flow charts created in the week 1-4 as accurately as possible. 
+        No additional changes to what the charts have initially been created will be expected, those recommendations will be taken into account when the development comes into its finalisation at week 16. 
+        At this stage, members will be creating formulas for input as researched various graph designs are to be followed. 
+        A communication channel will be entailing the design with Javascript, and an encryption feature will be developed as well to ensure users’ privacy. 
+        These features will be tested for bugs and logic errors on week 10 multiple times to ensure valid results and no runtime errors. 
+        Everything is to be uploaded to Github. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp From week 11 to week 15, members will be attempting to finish the design of the database management system with MySQL. 
+        The development will follow as close to the created diagram as possible, no additional changes or recommendations will be made at this stage.
+        Members will be instructed to participate in designing various entities or tables of a database to store various inputs coming from the front-end side.
+        These include financial formulas, outputs, user information like their account, subscription, website traffic, and payment history. 
+        The development will be tested and its results will go through various remunerations so that accurate results can be obtained from the frontend and stored in the backend. 
+        </p>
+        </div>    
+
+    </div>
+
+    <div class="page">
+        <div class="subpage"></div>    
+
+    </div>
+
+
+    <div class="page">
+        <div class="subpage">Page 4</div>    
+
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 4</div>    
+
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 4</div>    
+
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 4</div>    
+
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 4</div>    
+
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 4</div>    
+
+    </div>
+
+
+
+    </div>
+</div>
+
 </body>
 </html>
