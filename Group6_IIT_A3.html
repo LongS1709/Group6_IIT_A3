@@ -71,6 +71,77 @@
             }
 
         }
+
+        .bold
+        {
+            font-weight:bold
+        }
+
+    /* Table of content formatting */
+        .remove_anchor_underline
+        {
+            text-decoration: none;
+            font-size:12pt; 
+            font-family:'Times New Roman', Times, serif; 
+            color:black
+        }
+        
+        li{
+            font-size:12pt; 
+            font-family:'Times New Roman', Times, serif; 
+            text-decoration: none; color:black; 
+            font-weight:lighter;
+            line-height:1.35;
+        }
+
+          
+
+        .outer {
+            width: 70%;  
+        }
+        
+        .inner
+        {
+            padding-left: 24px;
+        }
+
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+
+        ul.leaders {
+            max-width: 40em;
+            padding: 0;
+            overflow-x: hidden;
+            list-style: none;
+           
+            }
+            
+            ul.leaders li:before {
+            float: left;
+            width: 0;
+            white-space: nowrap;
+            content:
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . "
+            }
+            
+            ul.leaders span:first-child {
+            padding-right: 0.33em;
+            background: white
+            }
+            
+            ul.leaders span + span {
+            float: right;
+            padding-left: 0.33em;
+            background: white
+            }
      </style>
 </head>
 <body>
@@ -108,23 +179,80 @@
             <br />
             <h1 style="font-weight:lighter; font-size:16pt; text-align:center">Date submitted: September 18, 2023 </h1>
             <br />
-    
         </div>
     </div>    
     
     
     </div>
-    <!--Write table of content K.Long-->
+    <!--Write table of content K.Long and Pham Dao Tan Loc-->
     <div class="page">
-        <div class="subpage">Table of content</div>
-            
+        <div class="subpage">
+        <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Table of content</h1>
+        
+        <ul class="leaders">
+        <!--List for Team Profile-->
+        <li class="bold"><span><a href="#Team_Profile" class="remove_anchor_underline" >Team Profile</a></span> <span>3</span></li>
+            <ul class="inner">
+            <li><span><a href="#Team_name" class="remove_anchor_underline">Team name</a></span> <span>3</span></li>
+            <li><span><a href="#Personal_information" class="remove_anchor_underline">Personal information</a></span> <span>3</span></li>
+            <ul class="inner">
+                <li><span><a href="#Nguyen_Kim_Long" class="remove_anchor_underline">Nguyen Kim Long - s4031709</a></span> <span>3</span></li>
+                <li><span><a href="#Che_Minh_Quan" class="remove_anchor_underline">Che Minh Quan - s3893635 </a></span> <span>3</span></li>
+                <li><span><a href="#Quan_Hung" class="remove_anchor_underline">Quan Hung - s3980813</a></span> <span>4</span></li>
+                <li><span><a href="#Pham_Dao_Tan_Loc" class="remove_anchor_underline">Pham Dao Tan Loc - s3924306</a></span> <span>4</span></li>
+            </ul>
+            </ul>
+        <!--List Project Description-->
+        <li class="bold"><span><a href="#Project_Description" class="remove_anchor_underline">Project Description</a></span> <span>5</span></li>
+            <ul class="inner">
+            <li><span><a href="#Overview" class="remove_anchor_underline">Overview</a></span> <span>5</span></li>
+            <ul class="inner">
+                <li><span><a href="#Topic" class="remove_anchor_underline">Topic</a></span> <span>5</span></li>
+                <li><span><a href="#Motivation" class="remove_anchor_underline">Motivation</a></span> <span>5</span></li>
+                <li><span><a href="#Landscape" class="remove_anchor_underline">Landscape</a></span> <span>5</span></li>
+            </ul>
+            </ul>
+        
+        <!--List Skills and Jobs-->
+        <li class="bold"><span><a href="#Project_Description" class="remove_anchor_underline">Skills and Jobs</a></span> <span>5</span></li>
+
+
+
+
+        <!--List Group reflection-->
+        <li class="bold" >Group reflection</li>
+
+
+        <!--List Tools:-->
+        <li class="bold">Tools</li>
+
+        
+
+        <!--List References-->
+        <li class ="bold">References</li>
+    
+
+        </ul>
+        
+        </div>    
     </div>
-    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
     <!--Write team profile K.Long-->
     <div class="page">
         <div class="subpage">
-            <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;">Team profile</h1>
-            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Team name</h2>
+            <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;" id = "Team_Profile">Team profile</h1>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;" id ="Team_name">Team name</h2>
             <p class="font_default" style="line-height:1.5">
                 &nbsp &nbsp &nbsp &nbsp The team’s name through consensus among members is “FinancialGen”. 
                 This is going to be the team’s official name throughout the assignment 3 progress. 
@@ -133,8 +261,8 @@
                 “Gen” represents the demographics on the receiving-end like middle-age, seniors, and more. 
                 Thus, the team hopes to develop, solve, and handle any emerging challenges for both the community and the market. 
             </p>
-            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Personal information</h2>
-            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Nguyen Kim Long - s4031709</h3>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;" id="Personal_information">Personal information</h2>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold;" id="Nguyen_Kim_Long">Nguyen Kim Long - s4031709</h3>
             <p class="font_default indent" style="line-height:1.5">Currently a freshman student of RMIT university in Vietnam, majoring in IT. 
                 Proficient in writing Python’s and Linux, MySQL. 
                 During free time, I’d like to read or watch content about computer’s areas like: web development, AI, and coding languages. 
@@ -145,7 +273,7 @@
                 As a recent entrant to the field of Information Technology, my latest and most recent development is in solving Python’s inquiries, developing database management systems, and commanding MacOS terminals using Linux. 
                 Not only that, I have satisfactory attempts in using Github’s repositories, creating branches, assigning commits, and making “Pull” requests.
             </p>
-            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Che Minh Quan - s3893635</h3>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold" id="Che_Minh_Quan">Che Minh Quan - s3893635</h3>
             <p class="font_default indent" style="line-height:1.5">
                 Currently RMIT’s students majoring in IT had experience in coding from high school, skill in HTML, Javascript, and Python. 
                 Hobbies: Love exploring AI sentients. Often questioned oneself with hypothetical questions of Artificial Intelligence mimicking human intellect. 
@@ -159,7 +287,7 @@
     <div class="page">
     <!--Write team profile K.Long-->
         <div class="subpage">
-            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Quan Hung - s3980813 </h3>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold" id="Quan_Hung">Quan Hung - s3980813 </h3>
             <p class="font_default indent" style="line-height:1.5">
                 I’m currently majoring in IT at RMIT, and have six years of study abroad in Australia. For hobbies, I love to integrate video graphics cards (VGAs) into a motherboard as well as watch videos about building gaming PCs. 
                 Additionally, I found my interest in several coding videos where coders show both logical thinking and technical skills to solve issues. Finally, I draw a lesson that no matter how much time it takes to complete, 
@@ -167,7 +295,7 @@
                 Furthermore, I studied fundamental concepts in computing science, including database concepts and data’s queries using SQL language, principles of good GUI design, and computer components. In addition, I currently gained knowledge of Linux commands, HTML and CSS. 
                 In the past, I’ve built some webpages and engaged in modifying hardwares during high school in Australia.
             </p>
-            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Pham Dao Tan Loc - s3924306</h3>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold" id="Pham_Dao_Tan_Loc">Pham Dao Tan Loc - s3924306</h3>
             <p class="font_default indent" style="line-height:1.5">
                 I’m a novice in IT and a freshman at RMIT. 
                 I have certain knowledge in using Python, Github, Linux or some web functions like HTML. 
@@ -192,9 +320,9 @@
     <!-- LOC PHAM write Project Description's overview HTML -->
     <!--Long formatted to fit with the page. Updated and remove some css atrributes, HTML element for overview-->
         <div class="subpage">
-        <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;">Project Description</h1>
-        <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Overview</h2>
-        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Topic: </h3>
+        <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;" id="Project_Description">Project Description</h1>
+        <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;" id="Overview">Overview</h2>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold" id="Topic">Topic: </h3>
         <p class="font_default indent" style="line-height:1.5">
         The project’s goal is to develop a utility website for the finance industry;
         it could also be considered a financial analysis tool. 
@@ -213,7 +341,7 @@
         </p>
 
     <!--Motivation section by Long-->
-        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Motivation</h3>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;" id="Motivation">Motivation</h3>
         <p class="font_default indent" style="line-height: 1.5">
         The motivation for this project stems from the passionate desire for both personal 
         development and engagement in helping others in identifying and selecting various types of financial assets, 
@@ -238,7 +366,7 @@
             and frameworks to create a functional application that harnesses data and processes 
             them to deliver expected results for the users. 
             </p>
-            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Landscape:</h3>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;" id="Landscape">Landscape:</h3>
             <p class="font_default indent" style="line-height: 1.5"> 
             When observing the market, several similar websites have
              been created with features that are alike to the project. Through browsing the Internet, sites like Seeking Alpha, Motley Fool Rule Breakers, Seeking Alpha’s Alpha Picks, 
