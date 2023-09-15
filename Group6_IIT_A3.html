@@ -1,4 +1,951 @@
-  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group6_IIT_A3</title>
+    <style>
+        table, th, td {
+            border:2px solid black;
+            border-collapse: collapse;    
+        }
+        .row_padding_week{
+            padding: 50px;
+        }
+        .row_padding_column{
+            padding-right: 50px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FAFAFA;
+            font: 12pt "Times New Roman";
+        }
+        .font_default{
+            font-weight: lighter;
+            font-size: 12pt;
+        }
+        .indent{
+            text-indent: 34px;
+        }
+            
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .page {
+            width: 21.9cm;
+            min-height: 29.7cm;
+            padding: 2cm;
+            margin: 0.5cm auto;
+            border: 1px #D3D3D3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-weight: lighter;
+        }
+        .subpage {
+            padding: 1cm;
+            border: 5px red solid;
+            /*height 237mm*/
+            height: 260mm;
+            outline: 2cm white solid;
+        }
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        @media print {
+            .page {
+                margin: auto;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+
+        }
+     </style>
+</head>
+<body>
+
+<div class="book">
+    <!--Write cover page Nguyen Kim Long-->
+    <div class="page">
+        <div>
+            <img style="display:block; margin-left: auto; margin-right: auto; width: 80%;" src="RMIT image.svg.png" alt="logo of RMIT">
+            <br />
+            <br />
+            <br />
+            <h1 class="font_default" style=" font-size: 18pt; text-align: center">Assignment 3: Our IT Project</h1>
+            <br />
+            <br />
+            <br />
+            <h1 class="font_default" style="font-size: 16pt; text-align: center; line-height: 1.5"> 
+                COSC2083 (2392) <br />
+                Semester 2 2023 <br />
+                Lecturer: Nguyen Minh Long <br />
+                RMIT University Vietnam <br />    
+            </h1>
+            <br />
+            <p style="font-weight:bold; font-size:16pt; text-align: center;">Prepared by:</p>
+            <p style="font-weight:lighter; font-size:16pt; text-align: center; line-height: 1.5"> 
+                Nguyen Kim Long - s4031709 <br/>
+                Che Minh Quan - s3893635   <br/>
+                Quan Hung - s3980813        <br/>
+                Pham Dao Tan Loc - s3924306 <br/>
+            </p>
+            <br />
+            <h1 style="font-weight:lighter; font-size:12pt; text-align:center; line-height: 1.5; font-style:italic">I declare that in submitting all work for this assessment I have read, understood and agree to the content
+                and expectations of the Assessment declaration 
+            </h1>
+            <br />
+            <h1 style="font-weight:lighter; font-size:16pt; text-align:center">Date submitted: September 18, 2023 </h1>
+            <br />
+    
+        </div>
+    </div>    
+    
+    
+    </div>
+    <!--Write table of content K.Long-->
+    <div class="page">
+        <div class="subpage">Table of content</div>
+            
+    </div>
+    </div>
+    <!--Write team profile K.Long-->
+    <div class="page">
+        <div class="subpage">
+            <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;">Team profile</h1>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Team name</h2>
+            <p class="font_default" style="line-height:1.5">
+                &nbsp &nbsp &nbsp &nbsp The team’s name through consensus among members is “FinancialGen”. 
+                This is going to be the team’s official name throughout the assignment 3 progress. 
+                The purpose for selecting the name is due to our goal of developing software solutions for the Finance’s sector; 
+                while the name: 
+                “Gen” represents the demographics on the receiving-end like middle-age, seniors, and more. 
+                Thus, the team hopes to develop, solve, and handle any emerging challenges for both the community and the market. 
+            </p>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Personal information</h2>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Nguyen Kim Long - s4031709</h3>
+            <p class="font_default indent" style="line-height:1.5">Currently a freshman student of RMIT university in Vietnam, majoring in IT. 
+                Proficient in writing Python’s and Linux, MySQL. 
+                During free time, I’d like to read or watch content about computer’s areas like: web development, AI, and coding languages. 
+                Besides computers, I’m interested in learning mathematics. 
+                Not only that, I like reading current news developments in areas like politics, business, and science. 
+                Within the sphere of Information Technology, I’ve a preference in developing web’s solutions for individuals and businesses as a full-stack developer.
+                I’m also keen on integrating machine learning algorithms into any project’s that I’d have worked on to develop automated results. 
+                As a recent entrant to the field of Information Technology, my latest and most recent development is in solving Python’s inquiries, developing database management systems, and commanding MacOS terminals using Linux. 
+                Not only that, I have satisfactory attempts in using Github’s repositories, creating branches, assigning commits, and making “Pull” requests.
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Che Minh Quan - s3893635</h3>
+            <p class="font_default indent" style="line-height:1.5">
+                Currently RMIT’s students majoring in IT had experience in coding from high school, skill in HTML, Javascript, and Python. 
+                Hobbies: Love exploring AI sentients. Often questioned oneself with hypothetical questions of Artificial Intelligence mimicking human intellect. 
+                For IT Interests, I practise Python, Javascript, and C++ in my free time. I had coded robots in highschool, I also have experience in HTML by creating a website during high school. 
+                Learning coding makes me like AI. For IT experience, I have built an e-commerce website, a restaurant’s webpage, and participated in coding competitions. 
+            </p>
+        </div>    
+    </div>
+    </div>
+
+    <div class="page">
+    <!--Write team profile K.Long-->
+        <div class="subpage">
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Quan Hung - s3980813 </h3>
+            <p class="font_default indent" style="line-height:1.5">
+                I’m currently majoring in IT at RMIT, and have six years of study abroad in Australia. For hobbies, I love to integrate video graphics cards (VGAs) into a motherboard as well as watch videos about building gaming PCs. 
+                Additionally, I found my interest in several coding videos where coders show both logical thinking and technical skills to solve issues. Finally, I draw a lesson that no matter how much time it takes to complete, 
+                as long as you stick with your plan, you will find tremendous approaches for yourself to select which is the most efficient and will let you see it bear fruit. My IT interest is through acquainting with certain IT sections like writing Python and C#. 
+                Furthermore, I studied fundamental concepts in computing science, including database concepts and data’s queries using SQL language, principles of good GUI design, and computer components. In addition, I currently gained knowledge of Linux commands, HTML and CSS. 
+                In the past, I’ve built some webpages and engaged in modifying hardwares during high school in Australia.
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Pham Dao Tan Loc - s3924306</h3>
+            <p class="font_default indent" style="line-height:1.5">
+                I’m a novice in IT and a freshman at RMIT. 
+                I have certain knowledge in using Python, Github, Linux or some web functions like HTML. 
+                During leisure hours, I’d watch the news or play video games. 
+                These help me to relax and connect with friends. 
+                Also documents technology and programming so I can use it for research and improve my IT knowledge. 
+                For my IT interest, I love to spend time learning and researching about Python, Github, HTML and some other technologies. 
+                From my perspective, Python and Github are not really difficult. 
+                However, my remember ability is not really good, within python for example have many structure and formula have to remember so that is my huge hurdle and I’m trying to improve. 
+                Beside that, my high school teacher taught and helped me experience some kind of technologies like AR, firework. 
+                I just joined the IT world in a short time because I don’t have much experience with technology. 
+                Some experience I got like making some programmes on Python and how to use many tools of Microsoft and Alphabet. 
+                Beside that, some complicated technology like AR, VR or cryptography that I had a period to experience when I was in grade 11. 
+                For my IT experience, I’ve developed certain video games mods for users to download and play with. 
+                Not only that, I’ve engaged in collaboration with peers in building a web page for a computer’s store.
+            </p>
+        </div>    
+    </div>
+    </div>
+
+    <div class="page">
+    <!-- LOC PHAM write Project Description's overview HTML -->
+    <!--Long formatted to fit with the page. Updated and remove some css atrributes, HTML element for overview-->
+        <div class="subpage">
+        <h1 style="font-size:18pt; font-family:'Times New Roman', Times, serif;">Project Description</h1>
+        <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Overview</h2>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Topic: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+        The project’s goal is to develop a utility website for the finance industry;
+        it could also be considered a financial analysis tool. 
+        It serves to welcome financial assets’ exchangers as people to engage and have a 
+        functional tool to support their decision making process when deciding on buying or selling stocks, 
+        bonds, and many similar items. 
+        <br/> <br />
+
+        &nbsp &nbsp &nbsp &nbsp When users engage in the website, they’ll be prompted for assigning certain inputs in accordance with designated fundamental analysis formulas by developers. 
+        On a surface level, those formulas will remain as simple as possible with the given recommendations and perhaps graphs on certain locations of the website. 
+        Furthermore, there shall be a communication channel so that users can have the liberty to exchange their insights with others; thus, this project is to be somewhat of a social media platform aiming for the finance’s industry .
+        However, there will be options where users can expect to engage in deep technical 
+        formulas that will further support their decision making process on deciding the best optimal 
+        route for their financial assets allocation so that desirable outcome and foreseeable results can be obtained, 
+        however they’ll have to engage in a form of subscription for further accessibility to such features. 
+        </p>
+
+    <!--Motivation section by Long-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Motivation</h3>
+        <p class="font_default indent" style="line-height: 1.5">
+        The motivation for this project stems from the passionate desire for both personal 
+        development and engagement in helping others in identifying and selecting various types of financial assets, 
+        such as, stocks, bonds, and many similar items to obtain positive financial goals. 
+        The project in itself is fascinating due to its introduction for developers to have certain exposure to the field of finance by making them add available finance’s formulas. 
+        Not to mention, allowing beginner’s website developers to leverage front-end programming languages and various frameworks to create the project. 
+        As the world is currently within an expansion era of Machine Learning, Artificial Intelligence, and Big Data technologies, 
+        the demand for processing and gathering data is essential. Hence, by having this project available, various inputs from users can help developers and observers to identify best performing financial assets. 
+        Hopefully, with those inputs, data can be transferred to AI technologies to process and deliver automatic results that have desirable quality. By engaging
+        </p>
+        </div>    
+    </div>
+
+
+
+    <!--Long code on Landscape, Detailed description (Aims)-->
+    <div class="page">
+        <div class="subpage">
+            <p class="font_default" style="line-height: 1.5"> 
+            in the project’s development, future employers can expect its developers 
+            to have proficiency in leveraging available front-end programming languages 
+            and frameworks to create a functional application that harnesses data and processes 
+            them to deliver expected results for the users. 
+            </p>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Landscape:</h3>
+            <p class="font_default indent" style="line-height: 1.5"> 
+            When observing the market, several similar websites have
+             been created with features that are alike to the project. Through browsing the Internet, sites like Seeking Alpha, Motley Fool Rule Breakers, Seeking Alpha’s Alpha Picks, 
+             and many more have similar characteristics to the team’s project features of being a financial analysis tool that support investing decisions [1]. 
+             However, the team’s project aims to offer financial analysis tools for users who are considered beginners to the finance industry and optional subscription services for advanced and technical analysis support to whoever has a desire to gather more insights of their respective investment choices. 
+             The team’s project also is different from these mentioned competitors because it has the option for users to engage 
+             in socialising among members to exchange information and developing parties that have similar goals; thus, helping them to develop informed decisions when selecting financial products for optimal results. 
+            </p>
+            <h2 style="font-size:16pt; font-family:'Times New Roman', Times, serif;">Detailed Description</h2>
+            <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif; font-weight:bold">Aims: </h3>
+            <p class="font_default indent" style="line-height: 1.5">
+            In order to accomplish the project in accordance with the provided topic’s description. 
+            There are several aims and goals that the team has to develop and ascertain to realise the project into its fruition. 
+            When it comes to developing the project, the team hopes to design several features that would serve as the core functionality of the project.
+            Thus, the team wants to obtain three aims. The first aim is to develop engagement with the users. 
+            The second aim is creating a database management system. 
+            The third and final aim is to create encryption for information protection then host the entire website. 
+            <br/> <br />
+            &nbsp &nbsp &nbsp &nbsp To begin with ascertaining the first aim of developing engagement with the users. 
+            The team will begin with creating a functional financial analysis tool 
+            through leveraging the availability of Javascript, HTML, and CSS programming languages to create front-end applications. 
+            Thus, the team hopes to develop certain fundamental analysis formulas with 
+            </p>
+        </div>    
+    </div>
+
+    <!--Long's continue's on description Aims-->
+    <div class="page">
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+        graphs to describe and visualise the inputs from the users. 
+        Initially and naturally, the team has to commit to doing web research for available and reliable financial formulas. 
+        They have to take notes of these formulas from trusted financial sources and hopefully communicate their findings to finance’s professionals. 
+        The team also has to build a subscription functionality. After gathering the formulas, the team has to begin developing flowcharts to start the planning stage. 
+        When that is finished the team will move to developing various kinds of financial analysis tools in accordance with research and the planning. 
+        Finally, the team will test for bugs and logic errors. After those processes of building applications, the team will have to develop a login and sign up location, a social communication channel for information exchange between users, and apply certain UX’s design principles to ensure visual imagery that appeals to the users’ taste. 
+        Most of these implementations will be using similar design’s flow as mentioned previously for the functionalities. Thus, all of these will be serving as the front-end of the project to develop engagement with the users. The team will then  
+        <br/> <br />
+        &nbsp &nbsp &nbsp &nbsp In order for the development of a database management system to handle inputs from the front-end aspect of the project that includes financial analysis’s tool, user’s registration information, and social communication exchange, the team has to focus on several courses of actions. 
+        To begin, an implementation of the programming language of MySQL is expected. 
+        Then the team will design a diagram to represent various storage locations in accordance with the design’s principles. 
+        The team will then begin the development stage of writing the script that follows the created diagram. 
+        After that the team will run several tests with the front-end features to ensure that the system is functioning. 
+        Finally, the team will store the script and move onto the next development stage. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp The final stage occurs when the team will be using a hosting website known as “000webhost” to host both front-end and back-end scripts [2]. 
+        These items will be matched up through the hosting website and made available to the public. 
+        The domain name can be either registered for free but contains the URL link that has the host’s name or money can be expensed so that a custom domain name can be created. 
+        The information protection and encryption will be monitored by the website’s host and be protected with an advanced firewall and DDOS protection against data’s breach [2]. 
+        Hence, the team hopes to develop financial solutions for users through these three mentioned aims and their respective goals. 
+        </p>
+        </div>
+    </div>
+    <!--Long Description on Plan and Progress-->
+    <div class="page">
+        <div class="subpage">
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Plan and Progress</h3>
+        <p class="font_default indent" style="line-height:1.5">
+        To get down to specifics of the development there will be certain plans and progress that needs to be made in order to witness the project’s coming into its fruition.
+        Thus, the project development will be alloted within 16 weeks. 
+        The initial project stage of pre-development will take place in the initial 4 weeks where codes will not be written, 
+        but information gathering and planning will account the most for the project.
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Thus, within week 1, members will be assigned responsibility of doing research on available resources on the Internet in finding Financial formulas and its description. 
+        They then have to jot down that information for future references. Several websites that would be responsible for providing the formulas: Investopedia, EDUCBA, Corporate Finance Institute, Yahoo Finance, Finance Formula, and many others [3, 4, 5 ,6, 7].
+        Hence, through these reliable and trustworthy sources, formulas can be ascertained in an utmost accurate manner that remains true and valid within the industry of Finance. 
+        Once those formulas are accounted for, they will be kept in record by individual members of the team awaiting for a meeting to occur. 
+        Not only that in week 1, besides finding formulas for the project, team members will also have the opportunity to conduct research on various available competitors, who have similar features offered like the website. 
+        Members will also be told to create their own individual Github’s repository for their individual findings to be stored. When such things have been established they will be told to leave those findings and await week 4 for a meeting on deciding things that are to be considered suitable to the project’s development. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Week 2 and 3 will be focused on designing flow charts and diagrams for both the project’s website and its Database Management System. Members will be told on their respective responsibilities in accordance with the process of development. To be specific, there will be division when it comes to design and development of members’ roles. Certain individuals will be assigned to develop flowcharts that are about front-end features which includes formulas processing that prompt users input to process and deliver an output of desirable results. 
+        Such flowchart’s design should be followed with the usage of Javascript for future building of applications so that its variations in functions like loops, dictionaries, lists, and many more can be accounted for. 
+        Similarly, such design of flowchart will also be applicable for the graphs’ feature on every output of the formula. 
+        For the design of the front-end interface with HTML and CSS, the use of traditional flow-chart for other application programming languages like Python, Ruby, Javascript, and many others might not 
+        </p>
+        
+        </div>    
+
+    </div>
+
+    <div class="page">
+    <!--Long continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+            be applicable. Thus, to ensure the quality of the website’s design, our team will be focusing on visiting different websites to see various available website’s template for references and inspirations. 
+            Then our team will be creating a diagram that is somewhat similar to a roadmap or mind map, detailing the features that will encompass our eventual development of the website with HTML and CSS. For the diagram’s design of our project’s database management system, our team will be following the design of an Entity Relational Diagram’s design to ensure the positive outcome of having various entities or tables during the stage of development with MySQL programming languages. 
+            Our team will discuss what entities are to be made available to store respective inputs from the front-end. Hence, those tables will store information about user’s login and registration, site’s traffic, output of formulas, communication exchange with encryption to ensure privacy for the users, users with or without subscriptions. 
+            In general, this diagram and charts development will make up the majority of this week. When members are finished with their design by themselves or together, they’ll have to submit their chart’s design to the team’s repository, Google Docs, and communication channel to obtain involvement and recommendations from fellow members. 
+            <br /> <br />
+            &nbsp  &nbsp  &nbsp  &nbsp Week 4 will be the team's last pre-development period, this week will be focused on the team attempting to gather every inputs that were made in week 1-3 and trying to see every possible avenue or error that existed within the design of the charts and diagrams for both the front-end and back-end of the system. 
+            There will be moments when additional modifications are to be made where either features are to be removed or added. When those moments occur, the team will gather and respond to any inquiries or requests by team members in regards to these instances. 
+            The last day of this week will be the team finalisation of their agreed upon features throughout the design process. 
+            Thus, changes will not be made until the development of the project is concluded in week 16. 
+            This is to ensure that during the development of the project with programming languages, there won’t be pauses due to sudden disagreements of the features. 
+            Members are encouraged to take notes of any additional changes they would like to make at the end of week 16. 
+            <br /> <br />
+            &nbsp &nbsp &nbsp &nbsp After week 4, the team will be having a total of 12 weeks remaining for the project.
+            Thus, the development of the project will be splitted into 6 weeks for front end development and the other 6 weeks for backend development. 
+            The last week of the project will be seeing the project hosted and made available to the public. 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+    <!--Long continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default indent" style="line-height:1.5">
+        During week 5 to week 6, the team will centre its sole attention to developing front-end features.
+         Members will be assigned responsibilities to handle their respective tasks. 
+         There will be deadlines created so that certain tasks can be completed. 
+         From week 5 to week 6, members will be responsible for handling the web pages' design with HTML and CSS to make them as appealing and appropriate to prospective users’ taste. 
+         Several researched templates for inspiration will be selected and go into development. 
+         The design description will be as follows: tabs and options will remain to the left, user login/registration will be on the top-right corner, user’s activity will remain to the right, main functionalities like homepages will remain to the top with respective icons or symbols. 
+         The design will follow the flow of simplicity with more imagery and icons as much as possible. Week 6 will be seeing members finishing their design in relation to the front-end interface. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp From week 7 to week 10, members are expected to be focusing on designing the front-end application of the project. 
+        The usage and knowledge of Javascripts are a necessity for the completion of this activity.
+        Members have to follow the planned flow charts created in the week 1-4 as accurately as possible. 
+        No additional changes to what the charts have initially been created will be expected, those recommendations will be taken into account when the development comes into its finalisation at week 16. 
+        At this stage, members will be creating formulas for input as researched various graph designs are to be followed. 
+        A communication channel will be entailing the design with Javascript, an encryption feature will be developed as well to ensure users’ privacy. 
+        These features will be tested for bugs and logic errors on week 10 multiple times to ensure valid results and no runtime errors. 
+        Everything is to be uploaded to Github. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp From week 11 to week 15, members will be attempting to finish the design of the database management system with mySQL. 
+        The development will follow as close to the created diagram as possible, no additional changes or recommendations will be made at this stage.
+        Members will be instructed to participate in designing various entities or tables of a database to store various inputs coming from the front-end side.
+        These include financial formulas, outputs, users information like their account, subscription, website’s traffic, user’s payment history. 
+        The development will be tested and its results will go through various remunerations so that accurate results can be obtained from the frontend and stored with the backend. 
+        </p>
+        </div>    
+
+    </div>
+
+    <div class="page">
+    <!--Long's continue on Plan and Progress-->
+        <div class="subpage">
+        <p class="font_default indent" style="line-height:1.5">
+        For week 16, everything will be finalised and readied for hosting through “000webhost” for both the frontend and backend [2].
+        Various scripts will be obtained from members and the team to put into deployment.
+        But before such an occurrence, members are to be asked for additional recommendations.
+        Those inputs will be taken into consideration, if reasonable and necessary, the team will take immediate action to ensure such features are available.
+        When everything is finished and no recommendations are mentioned.
+        The team will begin deploying everything through the webhost.
+        The team will be using encryption and protective features provided by the host itself. 
+        When the deployment stage has been reached, the website will be made available to the public. 
+        <br /> <br />
+        &nbsp &nbsp &nbsp &nbsp Based on the 16 weeks of development, the team will have encountered certain hurdles and obstacles along the way.
+        Members of the team might not be acquainted with the programming languages of HTML, CSS, and Javascript.
+        They might not know how to write mySQL script. 
+        Some of them may not even know how to create charts and diagrams. 
+        To ensure and bring everyone up to speed with these mentioned technicalities. 
+        Members are advised to commit to doing research themselves and correspond with those who are knowledgeable in these areas to be provided with additional support. 
+        Beyond the members, the project might not contain features or UX design that would appeal to the users’ taste. 
+        Several formulas could be not within the accuracy of giving the ideal results. 
+        The encryption from the web host might not be sufficient to handle the influx and complexity of input data. 
+        Perhaps certain features ought to be included to make the website more appealing and worthy for the users, but those remain beyond the scope of the current development and await additional upgrades in the future. 
+        Hence, if the ownership of this project was to be given to another team to work on, these concerns are to be addressed so that both the current development can be maintained to make way for future feature’s design. 
+        </p>
+        <!--Move to to Roles by Long-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Roles</h3>
+        <p class="font_default indent" style="line-height:1.5">
+            The technical roles of the team will not be included for the duration of the 16 weeks for this project. Thus, there won’t be technical designers or user interface designers.
+            This is to be the case due to members being fairly new to the world of software engineering and development.
+            However, hierarchy roles are to be accounted for with leader, secretary, and developers. 
+            For the role of leadership: Nguyen Kim Long, will be given such a task. He’ll be responsible for assigning tasks, formulating plans, organising members, and engaging with the design and development of the project. 
+            Secretary’s role will be given to Che Minh Quan, 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+        <div class="subpage">
+        <!--Continue Roles by Long-->
+        <p class="font_default" style="line-height:1.5">
+        his task is developing a timetable and keeping track of the project’s development.
+        He is to be aware of members’ engagement and remind them if they are to be not available.
+        He is to be responsible for engaging with the project and design development,
+        2 of the other members like Quan hung and Pham Dao Tan Loc are to be members of the project, their role is to engage with development in accordance with the leader’s guidance. 
+        They also have a responsibility to make suggestions and ensure the project’s run without bugs or errors. 
+        The roles are to be kept as guided. However, certain responsibilities can be delegated, updated, and added depending on the project’s requirements if needed. 
+        Overall, members are expected to be present and work on their assigned tasks as instructed by the team leader. 
+        </p>
+        <!--Move to scope and limits by Long-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Scope and limits: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+        The development of the project’s financial analysis tool will be focusing on several core fundamental features that are to be made for the users to engage.
+        Thus, the development will be targeting the design and integration of financial formulas from external sources through research.
+        These will prompt the users for certain inputs as in accordance with their respective and given formulas.
+        When an output is made, certain graphs, charts, and symbols will be displayed with the given formulas.
+        The project will also include adding social media communication functionality so that users can engage with fellow site’s users to exchange information in regards to their respective finance issues.
+        The group’s and friend’s features will be included in the development, as well to work in conjunction with the available communication channels. 
+        Another important feature is the login and signup feature where users’ data will be stored. 
+        Not to mention user’s data like personal information and payment’s method will be accounted for too. 
+        The final main feature is to include a subscription page, where users can grant access to sophisticated features and formulas to obtain more technical outputs in relation to their financial design. 
+        Thus, these primary features will serve as the team main’s scope and its limit due to the availability of 4 members and 16 weeks of design and development. 
+        Besides those prioritised features, several additional features will have their own spotlight in the future beyond the 16th week mark like emojis for chats, financial news, more financial data, and many more will be included and expanded, eventually. 
+        </p>
+        <!--Tools and Technologies-->
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Tools and Technologies: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+            For this project, the team will be using and integrating several available
+            tools and technologies to ensure the completion of the established objectives. 
+            Members can use either 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+        both operating systems like Windows or MacOS for the project’s development. 
+        The programming languages for developing the front-end side that includes the style and format would be through using HTML, CSS, and Javascript. 
+        While for the back-end side, the adoption of MySQL is to be used to build relational tables that would be responsible for storing various kinds of data coming from the front-end. 
+        For creating the charts and diagrams, the team will be using Diagram.io to develop those things. 
+        Furthermore, the use of either Visual Studio Code or Visual Code it is to be in the preferences of members and their respective experience with such Integrated Development Environment. 
+        The use of Github is to serve as the location for storing technical code and scripts [9]. 
+        Finally, “000webhost” will be responsible for hosting the developed script for both frontend and backend [2]. 
+        This hosting website will ensure security risk for the project and make the system available for the public. 
+        </p>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Testing: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+            For the project’s testing, the team will be committing to extensive testing upon any designs or code’s development. Those codes have to be following the created diagrams and charts. To ensure such quality, members will be asked to correspond with the leader and secretary as urgently as possible whenever they encounter any issues. It is expected that members are capable and competent in handling the design and the coding for their respective responsibilities. During the design week of 1 to 4, diagrams and charts will frequently be checked by the leader. When week 4 is reached the finalisation of pre-code development will take place and everyone will have ample opportunities to review and correspond with the proposed design. For the coding weeks from 5 to 16, codes will be reviewed by the leader and secretary on Sunday of every week. If errors are to be found, corresponding members who are in charge of handling the codes will be inquired and be asked for repairs. Within their own respective coding tasks, members will have to write their own time and name through commenting on their respective codes. This is to ensure that everyone can see and acknowledge certain members' involvement with sections of the code. By week 16, a meeting will be held for the team where the leader will act like a random user who is using the platform, he’ll demonstrate and engage with various features offered by the project’s website.
+            If errors are to be found during the demo, then solutions will be established and members will have the duties to tackle such issues. 
+            Thus, it is expected that through these rigorous testing, the quality of the project will be as expected and be made available for future development of 
+        </p>
+        </div>    
+    </div>
+
+    <div class="page">
+        <div class="subpage">
+        <p class="font_default" style="line-height:1.5">
+        new additional features.
+        Not only that, it would allow new members who are oblivious to the project to continue 
+        and expand the project further. 
+        </p>
+        <h3 style="font-size:14pt; font-family:'Times New Roman', Times, serif;">Timeframe: </h3>
+        <p class="font_default indent" style="line-height:1.5">
+        This section represents our team general’s timetable with respective responsibilities assigned to four members within the span of 16 weeks.
+        This will include the design of diagrams and charts, creation of frontend and backend with codes, 
+        and time for writing the report. 
+        </p>
+        <!--Create table by Long-->
+        <table style="width:100%">
+            <tr class="row_padding_week"><!--Table headers by Long-->
+              <th>Week</th>
+              <th>Long</th>
+              <th>Quan</th>
+              <th>Hung</th>
+              <th>Loc</th>
+            </tr>
+            <!--Table 1-->
+            <tr VALIGN=TOP>
+              <td style ="text-align: center; padding: 50px" valign="middle">1</td>
+              <td style="text-align:left">
+                _Assign tasks to members and self. <br />
+                _Commit to doing research on available financial formulas and making recommendations. <br />
+                _Responsible for writing the initial sections of the report. <br />
+                _Develop communication channels, Github’s repository, and Google Docs for the report <br />
+                </td>
+              <td>_Being attentive to individual members' responsibilities as assigned. <br />
+                _Commit to writing a report's section as assigned by the leader. <br />
+                _Conduct research on available financial formulas. <br />
+                </td>
+              <td> _Conducting research on financial formulas and make suggestions on what to obtain for the project. </td>
+              <td> _ Collaborating with fellow members to write reports <br />
+                _ Conduct research on similar competition and identify suitable design’s templates for future usage. 
+                </td>
+            </tr>
+            <!--Table 2 same page-->
+            <tr VALIGN=TOP style="height:100px">
+                <td style ="text-align: center; padding: 50px" valign="middle">2</td>
+
+
+                <td style="text-align:left" valign="left">
+                    _Assign tasks to members and self <br/>
+                    _Host the design link for members to join. <br/>
+                    _Engage in writing the report allotted sections. <br/>
+                </td>
+
+
+                <td style="text-align:left">
+                    _Commit to designing chart using a given diagram tool. <br/>
+                    _Develop frontend charts <br/>
+                    _Remain attentive and observe members' responsibilities <br/>
+                    
+                </td>
+                
+                <td style="text-align:left">
+                    _Attend chart development for frontend interface. <br/>
+                    _Write a report as instructed by the team leader. <br/>
+                    _Report back to the secretary of any issues or inquiries. <br/> 
+                </td>
+
+                <td style="text-align:left">
+                    _ Commit to designing interface charts <br/>
+                    _Be responsible for writing reports     <br/>
+                    _It is expected to report any issues to the secretary. <br/> 
+                </td>
+            </tr>
+          </table>
+        </div>    
+    </div>
+
+    <!--Table 2 2nd page-->
+    <div class="page">
+        <div class="subpage">
+        <table style="width:100%">
+            <tr VALIGN=Top>
+            <td class = row_padding_week style ="text-align: center; color:white" valign="middle">2
+            </td>
+            
+            <td style="text-align:left; padding: 0 60px 0 0"valign="top">
+                _Commit to designing charts for the frontend interface.
+            </td>
+            
+            <td style="text-align:left" valign="top">
+                and report to the leader for recommendations and instructions. 
+            </td>
+            
+            <td style="text-align:left; color:white" > 
+                and report to the leader for recommendations and instructions.  
+            </td>
+            
+            <td style="text-align:left; color:white" > 
+                and report to the leader for recommendations and instructions. 
+            </td>
+            </tr>
+            <!--For week 3 by Long-->
+            <tr>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">3</td>
+                
+            <td style="text-align:left;"valign="top">
+                _Assign tasks to members.<br />
+                _Develop another diagram canvas for development using previously used tools. <br />
+                _Design charts for frontend features formula <br />
+                _Commit to writing the report. <br />
+                
+            </td>
+                
+            <td style="text-align:left" valign="top">   
+                _Record members inquiries.<br />
+                _Be responsible for writing the report of allotted sections. <br />
+                _Design charts for frontend features of social media and communication tools. <br />
+            </td>
+                
+            <td style="text-align:left; color:black" valign="top" >      
+                _ Write reports.
+                _Be responsible for designing frontend features charts for subscriptions and technical formulas.
+            </td>
+                
+            <td style="text-align:left; color:black" valign="top" >            
+                _Write reports.
+                Commit to a similar task as the third member: designing frontend features charts for subscription and technical formulas. 
+            </td>
+            </tr>
+
+            <!--For week 4 by Long-->
+            <tr>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">4</td>
+                
+            <td style="text-align:left;"valign="top">
+                    _Assign tasks to members. <br/>
+                    _Create another diagram’s canvas. <br />
+                    _Responsible for designing backend system charts of user/login, communication channel. <br />
+                    _Write a report. <br />
+                    _Check to see if the report is following the criterias. <br />
+                    _Finalize the report. <br />
+                    _Check the validity of the backend design and host a meeting with members. <br />
+            </td>
+                        
+            <td style="text-align:left" valign="top">   
+                    _ Be attentive to member’s progress and contribution. <br/>
+                    _ Write given report sections. <br/>
+                    _Design backend system diagram for formula input and site’s traffic.<br/>
+    
+            </td>
+                        
+            <td style="text-align:left; color:black" valign="top" >      
+                    _Write allotted report’s section. <br />
+                    _ Design diagram for backend system focusing on technical and subscription based formulas input. <br />
+            </td>
+                        
+            <td style="text-align:left; color:black" valign="top" >            
+                    _Write allotted report’s section. <br />
+                    _Design diagram for backend system focusing on user’s personal information. <br />
+            </td>
+            </tr>
+        </table>   
+        </div>    
+    </div>
+    <!--Code for week 5,6,7,8,9-->
+    <div class="page">
+        <div class="subpage">
+        <table style="width:100%">
+            <!--week 5 by Long-->
+            <tr VALIGN=Top>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">5
+            </td>
+        
+             <td style="text-align:left"valign="top">
+                _ Use HTML to develop the structure of a website.<br />
+                _Gather everyone’s code on Github and set up a meeting with members. <br />
+            </td>
+                
+            <td style="text-align:left" valign="top">                  
+                _ Use HTML to develop structure of website
+            </td>
+                
+            <td style="text-align:left" > 
+                _ Be responsible for using CSS for formatting.
+            </td>
+            <td style="text-align:left" > 
+                _Support member 3 in CSS’s development for formatting.
+            </td>
+            </tr>
+
+            <!--Week 6 by Long-->
+            <tr VALIGN=Top>
+                <td class = row_padding_week style ="text-align: center; color:black" valign="middle">6
+                </td>
+            
+                 <td style="text-align:left"valign="top">
+                    _ Be responsible for designing the website with CSS. <br/>
+                    _Gather team’s code and hold a meeting. <br/>
+                </td>
+                    
+                <td style="text-align:left" valign="top">                  
+                    _ Write CSS’s code for formatting with styles and colours.
+                </td>
+                    
+                <td style="text-align:left" > 
+                    _Be responsible for using HTML to develop a website's interface structure. 
+                </td>
+                <td style="text-align:left" > 
+                    _ Use HTML to develop a website's interface. 
+                </td>
+            </tr>
+
+            <!--Week 7 by Long-->
+            <tr VALIGN=Top>
+                <td class = row_padding_week style ="text-align: center; color:black" valign="middle">7
+                </td>
+            
+                 <td style="text-align:left"valign="top">
+                    _ Be responsible for designing the website using Javascript for financial formulas output. <br/>
+                    _Gather team’s code and meeting <br/>
+                </td>
+                    
+                <td style="text-align:left" valign="top">                      
+                    _ Be responsible for designing the website using Javascript for financial formulas output. 
+                </td>
+                    
+                <td style="text-align:left" > 
+                    _ Use Javascript to design financial formulas output.  
+                </td>
+                <td style="text-align:left" > 
+                    _Use Javascript to design financial formulas output. 
+                </td>
+            </tr>
+            <!--Week 8 by Long-->
+            <tr VALIGN=Top>
+                <td class = row_padding_week style ="text-align: center; color:black" valign="middle">8
+                </td>
+            
+                 <td style="text-align:left; padding: 0 0 75px 0" valign="top">
+                    _ Be responsible for creating front-end features using Javascript <br />
+                    _Gather team code and develop meetings. <br />
+                </td>
+                    
+                <td style="text-align:left" valign="top">                               
+                    _ Write Javascript code for communication channel.
+                </td>
+                    
+                <td style="text-align:left" > 
+                    _ Write Javascript code for communication channel.
+                </td>
+                <td style="text-align:left" > 
+                    _ Write Javascript code for communication channel.
+                </td>
+            </tr>
+            <!--Week 9 by Long-->
+            <tr VALIGN=Top>
+                <td class = row_padding_week style ="text-align: center; color:black" valign="middle">9
+                </td>
+            
+                <td style="text-align:left; padding: 0 0 75px 0" valign="top">
+                    Write Javascript’s code for communication of private members.
+                </td>  
+        
+                </td>
+                <td style="text-align:left" valign="top">                               
+                _ Write Javascripts code for communication of many members from a single channel. 
+                </td> 
+                <td style="text-align:left" >     
+                _ Develop invite and make friend requests using Javascript’s code.
+                </td>
+                <td style="text-align:left" > 
+                _Write Javascript’s code for communication of members for many members for 1 channel. 
+                </td>
+            </tr>
+
+        </table>
+        </div>    
+    </div>
+
+    <div class="page">
+        <div class="subpage">
+        <!--Week 10, 11, 12, 13 tables by Long-->
+        <!--Week 10-->
+        <table style="width:100%">
+            <tr VALIGN=Top>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">10
+            </td>
+            
+            <td style="text-align:left"valign="top">
+                Write javascript’s code for financial formulas behind the subscription’s system using Javascript.<br/> 
+                _Finalize every frontend features and applications.<br/>
+                _Host a meeting and address concerns. Then allotted members’ responsibilities if needed to develop necessary modifications.<br/>  
+            </td>
+            
+            <td style="text-align:left" valign="top">
+                _ Write Javascript’s code for financial formulas behind the subscription system using Javascript <br/>
+            </td>
+            
+            <td style="text-align:left; color:black" > 
+                _Develop payment system with Javascript <br/>
+            </td>
+            
+            <td style="text-align:left; color:black"> 
+                _Support in the development of payment systems with Javascript.  <br/>
+            </td>
+            </tr>
+
+        <!--Week 11-->
+            <tr VALIGN=Top>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">11
+            </td>
+            
+            <td style="text-align:left;"valign="top">
+                _ Use MySQL to develop. <br />
+                _Hold a meeting to address concerns. <br />
+            </td>
+            
+            <td style="text-align:left; padding: 0 50px 0 0" valign="top">
+                _Develop with MySQL for user’s data.
+            </td>
+            
+            <td style="text-align:left; color:black; padding: 0 50px 0 0" > 
+                _Develop with MySQL for user’s data.
+            </td>
+            
+            <td style="text-align:left; color:black; padding: 0 50px 0 0"> 
+                _Develop with MySQL for user’s data.
+            </td>
+            </tr>
+        <!--Week 12-->
+            <tr VALIGN=Top>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">12
+            </td>
+            
+            <td style="text-align:left;"valign="top">
+                _Develop with MySQL <br />
+                _Hold the meeting to address concerns. <br />
+            </td>
+            
+            <td style="text-align:left; padding: 0 0 0 0" valign="top">
+                _Develop with MySQL for financial formulas <br/>
+                _Review written codes <br />
+            </td>
+            
+            <td style="text-align:left; color:black; padding: 0 0 0 0" > 
+                _Develop with MySQL for financial formulas <br/>
+                _Test bugs and logic errors. <br/>
+            </td>
+            
+            <td style="text-align:left; color:black; padding: 0 0 0 0"> 
+                _Develop with MySQL for financial formulas<br/>
+                _Ensure development principles are followed. <br/>
+            </td>
+            </tr>
+        
+            <!--Week 13-->
+            <tr VALIGN=Top>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">13
+            </td>
+            
+            <td style="text-align:left;"valign="top">
+                _ Develop using MYSQL. <br />
+                _Responsible for user’s information. <br />
+            </td>
+            
+            <td style="text-align:left; padding: 0 0 0 0" valign="top">
+                _Develop using MySQL. <br />
+                _Focus on creating storage locations for banking <br />
+            </td>
+            
+            <td style="text-align:left; color:black; padding: 0 0 0 0" > 
+                _Develop using MySQL. <br />
+                _Focus on creating storage locations for payment <br />
+            </td>
+            
+            <td style="text-align:left; color:black; padding: 0 0 0 0"> 
+                _Develop using MySQL. <br />
+                _Focus on creating storage locations for banking <br />
+            </td>
+            </tr>
+        </table>        
+    </div>
+    </div>
+
+            <!--Table for week 14,15,16 by Long-->
+    <div class="page">
+        <div class="subpage">
+        <table style="width:100%">
+        <!--Week 14-->
+        
+        <tr VALIGN=Top>
+            <td class = row_padding_week style ="text-align: center; color:black" valign="middle">14
+            </td>
+                
+            <td style="text-align:left;"valign="top">       
+                _Develop using MySQL.<br/>
+                _Develop storage for subscribed users.<br/>
+            </td>
+                
+            <td style="text-align:left; " valign="top" >
+                _Develop using MySQL. <br/>
+                _Focus on creating storage locations for formulas output of subscribed users.<br/>
+            </td>
+                
+            <td style="text-align:left; color:black; " valign="top">                
+                _ Develop using MySQL. <br/>
+                _Focus on creating storage locations for subscription<br/>
+            </td>
+                
+            <td style="text-align:left; color:black; " valign="top"> 
+                _Develop using MySQL. <br/>
+                _Focus on creating storage locations for formulas output.<br/>
+            </td>
+            </tr>
+
+
+            <!--Week 15-->
+            <tr VALIGN=Top>
+                <td class = row_padding_week style ="text-align: center; color:black" valign="middle">15
+                </td>
+                    
+                <td style="text-align:left;"valign="top">       
+                    _Develop using MySQL.<br/>
+                    _Develop storage for private information exchange with encryption for privacy. <br/>      
+                </td>
+                    
+                <td style="text-align:left;padding-right:20px;" valign="top" >
+                    _Develop using MySQL.  <br/>
+                    _Develop storage location for parties information exchange with encryption for privacy.<br/>
+                </td>
+                    
+                <td style="text-align:left; color:black; padding-right:30px;" valign="top">                      
+                    _Develop using MySQL. <br/>
+                    _Develop storage location for parties information exchange.<br/>
+                </td>
+                    
+                <td style="text-align:left; color:black;" valign="top">         
+                    _Develop using MySQL. <br/>
+                    _Develop storage location for private communication exchange with encryption. <br/>
+                </td>
+            </tr>
+
+            <!--Week 16-->
+
+            <tr VALIGN=Top>
+                <td class = row_padding_week style ="text-align: center; color:black" valign="middle">16
+                </td>
+                    
+                <td style="text-align:left;"valign="top">       
+                    _Host everything on web hosting’s site. <br/>
+                    _Communicate with members to address issues. <br/>
+                </td>
+                    
+                <td style="text-align:left; " valign="top" >     
+                    _Identify errors among planned charts.<br/>
+                    _Identify syntax and logic errors in code.<br/>
+                </td>
+                    
+                <td style="text-align:left; color:black; padding-right:20px;" valign="top">                      
+                    _Identify syntax and logic errors in code.<br/>
+                    _Make suggestions. <br/>
+                </td>
+                    
+                <td style="text-align:left; color:black;" valign="top">         
+                    _Identify syntax and logic errors in code.<br/>
+                    _Fix bugs.<br/>
+                    _Make recommendations.<br/> 
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+    </div>
+
+    <div class="page">
+        <div class="subpage">Page 4 
+    </div>
+    </div>
+
 <!-- Risks by Quan Hung-->
     <div class="page">
         <div class="subpage">
@@ -135,7 +1082,8 @@
                
         </div>
     </div>  
+</div>
 
-     
-
+</body>
+</html>
 
